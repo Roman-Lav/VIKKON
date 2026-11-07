@@ -1,372 +1,166 @@
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="uk">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Купівля брухту - Vikkon</title>
-<link rel="favicon.ico" href="/favicon.ico" type="image/x-icon">
-<link href="/themes/vikkon/res/style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="/themes/vikkon/res/js/jquery-1.4.1.min.js"></script>
- <script type="text/javascript">
-
-/***
-    Simple jQuery Slideshow Script
-    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
-***/
-
-function slideSwitch() {
-    var $active = $('#img_top_content IMG.active');
-
-    if ( $active.length == 0 ) $active = $('#img_top_content IMG:last');
-
-    // use this to pull the images in the order they appear in the markup
-    var $next =  $active.next().length ? $active.next()
-        : $('#img_top_content IMG:first');
-
-    // uncomment the 3 lines below to pull the images in random order
-
-    // var $sibs  = $active.siblings();
-    // var rndNum = Math.floor(Math.random() * $sibs.length );
-    // var $next  = $( $sibs[ rndNum ] );
-
-
-    $active.addClass('last-active');
-
-    $next.css({opacity: 0.0})
-        .addClass('active')
-        .animate({opacity: 1.0}, 3000, function() {
-            $active.removeClass('active last-active');
-        });
-}
-
-$(function() {
-    setInterval( "slideSwitch()", 4000 );
-});
-
-</script>
-
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=1000">
+	<title>Купівля брухту - Vikkon</title>
+	<meta name="description" content="Актуальні ціни на брухт кольорових і чорних металів у Дніпрі: мідь, латунь, алюміній, свинець, нержавіюча сталь. Компанія «ВІККОН».">
+	<link rel="icon" href="../../favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../../assets/css/style.css">
+	<script src="../../assets/js/slideshow.js" defer></script>
 </head>
-
 <body>
-<div id="head">
-	<div id="logo">
-    <a href="/" title="Главная"><img src="/themes/vikkon/res/logo.png" alt="vikon" /></a>
-    </div>
-  		<div id="menu_head">
-        	<ul><li><a href="/ru/main/">Головна</a></li><li>Купівля брухту</li><li><a href="/ru/scrap_implementation/">Реалізація брухту</a></li><li><a href="/ru/contacts/">Контакти</a></li></ul>        </div>
-        <div id="menu_head2">
-        	        </div>
-</div>
-<div id="main">
-	<div id="content">
-    	<div id="top_content">
-        	<h1>Купівля брухту</h1>
-        </div>
-        <div id="img_top_content">
-        	<img src="/themes/vikkon/res/anim/baner7.jpg"  class="active">
-        	<img src="/themes/vikkon/res/anim/baner1.jpg">
-        	<img src="/themes/vikkon/res/anim/baner6.jpg">
-        	<img src="/themes/vikkon/res/anim/baner2.jpg">
-			<img src="/themes/vikkon/res/anim/baner8.jpg">
-			<img src="/themes/vikkon/res/anim/baner9.jpg">
-			<img src="/themes/vikkon/res/anim/baner10.jpg">
+	<a class="skip-link" href="#content">Перейти до змісту</a>
 
-        </div>
-        <div id="texta">
-        <p>2026-11-04</p>
-<table style="width: 100%; height: 344px; text-align: center; border: 1px solid #898989;" border="1" cellspacing="0" cellpadding="0">
-<tbody>
-<tr>
-<td colspan="2">
-<p style="text-align: center;"><strong><span style="font-size: large;">Кольорові метали (Акт №57/16)</span></strong></p>
-</td>
-</tr>
-<tr>
-<td width="199">
-<p style="text-align: center;"><span style="font-size: small;"><strong><span style="font-size: medium;">Мідь</span></strong></span></p>
-</td>
-<td width="167">
-<p><span style="font-size: medium;">510-520 00</span><span style="font-size: medium;">0,00</span></p>
-</td>
-</tr>
-<tr>
-<td width="199">
-<p style="text-align: center;"><span style="font-size: small;"><strong><span style="font-size: medium;">Мідь М-1</span></strong></span></p>
-</td>
-<td width="167">
-<p><span style="font-size: medium;">520-530&nbsp;</span><span style="font-size: medium;">000,00</span></p>
-</td>
-</tr>
-<tr>
-<td width="199">
-<p><span style="font-size: small;"><strong><span style="font-size: medium;">Латунь</span></strong></span></p>
-</td>
-<td width="167">
-<p><span style="font-size: medium;">300-310 000,00</span></p>
-</td>
-</tr>
-<tr>
-<td width="199">
-<p><span style="font-size: small;"><strong><span style="font-size: medium;">ОцС/БраЖ</span></strong></span></p>
-</td>
-<td width="167">
-<p><span style="font-size: medium;">310-320 000,00</span></p>
-</td>
-</tr>
-<tr>
-<td width="199">
-<p><span style="font-size: small;"><strong><span style="font-size: medium;">Титан</span></strong></span></p>
-</td>
-<td width="167"><span style="font-size: medium;">&nbsp; 75 000,00</span></td>
-</tr>
-<tr>
-<td width="199">
-<p><span style="font-size: small;"><strong><span style="font-size: medium;">Алюміній</span></strong></span></p>
-</td>
-<td width="167">
-<p><span style="font-size: medium;">&nbsp; 55-64 0</span><span style="font-size: medium;">0</span><span style="font-size: medium;">0,00</span></p>
-</td>
-</tr>
-<tr>
-<td width="199">
-<p><span style="font-size: small;"><strong><span style="font-size: medium;">Алюміній електротехнічний</span></strong></span></p>
-</td>
-<td width="167">
-<p><span style="font-size: medium;">&nbsp; 105-113 000,00</span></p>
-</td>
-</tr>
-<tr>
-<td width="199">
-<p><span style="font-size: small;"><strong><span style="font-size: medium;">Алюмієвий профіль</span></strong></span></p>
-</td>
-<td width="167">
-<p><span style="font-size: medium;">&nbsp; &nbsp;95-100 000,00&nbsp;</span></p>
-</td>
-</tr>
-<tr>
-<td width="199">
-<p><span style="font-size: small;"><strong><span style="font-size: medium;">Алюмінієва банка</span></strong></span></p>
-</td>
-<td width="167">
-<p><span style="font-size: medium;">&nbsp; 55 000,00</span></p>
-</td>
-</tr>
-<tr>
-<td width="199">
-<p><span style="font-size: small;"><strong><span style="font-size: medium;">&nbsp;Свинець&nbsp;<br /></span></strong></span></p>
-</td>
-<td width="167"><span style="font-size: medium;">&nbsp; 63-68 000,00</span></td>
-</tr>
-<tr>
-<td width="199">
-<p><span style="font-size: small;"><strong><span style="font-size: medium;">ЦАМ</span></strong></span></p>
-</td>
-<td width="167"><span style="font-size: medium;">&nbsp; 70-80 000,00</span></td>
-</tr>
-<tr>
-<td width="199">
-<p><span style="font-size: small;"><strong><span style="font-size: medium;">Магній</span></strong></span></p>
-</td>
-<td width="167">
-<p><span style="font-size: medium;">&nbsp; &nbsp;35-40 000,00</span></p>
-</td>
-</tr>
-<tr>
-<td width="199">
-<p><span style="font-size: small;"><strong><span style="font-size: medium;">Стружка алюмінієва</span></strong></span></p>
-</td>
-<td width="167">
-<p><span style="font-size: medium;">&nbsp; &nbsp; 47-52 000,00</span></p>
-</td>
-</tr>
-<tr>
-<td width="199">
-<p><span style="font-size: small;"><strong><span style="font-size: medium;">Стружка мідна</span></strong></span></p>
-</td>
-<td width="167"><span style="font-size: medium;">&nbsp; 450-455 000,00</span></td>
-</tr>
-<tr>
-<td width="199">
-<p><span style="font-size: small;"><strong><span style="font-size: medium;">Стружка бронзова і латунна</span></strong></span></p>
-</td>
-<td width="167">
-<p><span style="font-size: medium;">&nbsp; 290-295 000,00</span></p>
-</td>
-</tr>
-<tr>
-<td width="199">
-<p><strong><span style="font-size: medium;">Радіатор</span></strong></p>
-</td>
-<td width="167">
-<p><span style="font-size: medium;">&nbsp; 300-310&nbsp;</span><span style="font-size: medium;">000,00</span></p>
-</td>
-</tr>
-<tr>
-<td width="199">
-<p><span style="font-size: small;"><strong><span style="font-size: medium;">Стружка титана&nbsp;</span></strong></span></p>
-</td>
-<td width="167"><span style="font-size: medium;">&nbsp; &nbsp; 40 000,00&nbsp;&nbsp;</span></td>
-</tr>
-<tr>
-<td width="199">
-<p>&nbsp;</p>
-</td>
-<td width="167"><span style="font-size: medium;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></td>
-</tr>
-<tr>
-<td colspan="2">
-<p style="text-align: center;"><strong><span style="font-size: large;">Чорні метали (Акт №56/16 )</span></strong></p>
-</td>
-</tr>
-<tr>
-<td width="199">
-<p><span style="font-size: small;"><strong><span style="font-size: medium;">Брухт нержавіючої сталі</span></strong></span></p>
-</td>
-<td width="167"><span style="font-size: medium;">&nbsp; &nbsp; 17-20 000,00</span></td>
-</tr>
-<tr>
-<td width="199">
-<p><span style="font-size: small;"><strong><span style="font-size: medium;">Стружка нержавіючої сталі</span></strong></span></p>
-</td>
-<td width="167"><span style="font-size: medium;">&nbsp; &nbsp; 6 000,00</span></td>
-</tr>
-<tr>
-<td width="199">
-<p><span style="font-size: small;"><strong><span style="font-size: medium;">Брухт оцинкованний , легковаговий</span></strong></span></p>
-</td>
-<td width="167">
-<p><span style="font-size: medium;">&nbsp; &nbsp; 1 000,00</span></p>
-</td>
-</tr>
-<tr>
-<td width="199">
-<p><span style="font-size: small;"><strong><span style="font-size: medium;">Брухт чорних металів</span></strong></span></p>
-</td>
-<td width="167">
-<p><span style="font-size: medium;">&nbsp; &nbsp; 1 000,00</span></p>
-</td>
-</tr>
-<tr>
-<td width="199">
-<p><span style="font-size: small;"><strong><span style="font-size: medium;">Стружка стальна</span></strong></span></p>
-</td>
-<td width="167"><span style="font-size: medium;">&nbsp; &nbsp; -</span></td>
-</tr>
-<tr>
-<td width="199">
-<p>&nbsp;</p>
-</td>
-<td style="text-align: center;" width="167"><br /></td>
-</tr>
-</tbody>
-</table>
-<p style="text-align: left;"><span style="font-size: medium;">Ціни станом на 04.11</span><span style="font-size: medium;">.</span><span style="font-size: medium;">2026 р.</span></p>
-<p style="text-align: left;"><span style="font-size: medium;">Ціни зазначені в гривні за 1 тону без урахування ПДВ (пільга)</span></p>
-<p style="text-align: left;"><span style="font-size: medium;"><span style="color: #ff0000;"><span style="font-size: small;"><strong>Ціни, що вказані у прайсі, діють на основному складі.</strong></span></span></span></p>
-<p><span style="font-size: small;">(пр-кт&nbsp; Богдана Хмельницького 171)&nbsp;</span></p>
-<p>&nbsp;</p>
-<p style="text-align: left;">&nbsp;</p>
-<p style="text-align: left;"><span style="font-size: medium;"><a href="../../../../docs/download/kp_11_01_2013.doc">Прайс для завантаження</a></span></p>        </div>
-    </div>
-    <div id="sidebar">
-    	<div id="search">
-    	<!--
-        	<form action="" method="get">
-            	<input name="q" type="text" value="q" size="20" maxlength="120" />
-                <button><img src="/themes/vikkon/res/lupe.png"  alt="search"/></button>
-            </form>
-        -->
-       
-
-<form action="/ru/search/" method="get">
-  <input name="q"
-  onfocus="this.value=''"  type="text" value="Поиск по сайту" size="20" maxlength="120" />
-
- <button><img src="/themes/vikkon/res/lupe.png"  alt="search"/></button>
-
-</form>
-        </div>
-    	<div id="side_katalog">
-                </div>
-        <div style="width:100px; height:15px; clear:both; margin-top: 22px"></div>
-    	<div id="contact">
-			<div class="ih1" style="margin-top: -10px">Контактні телефони:</div>
-			+38 (067) 566-74-81,<br>
-				+38 (067) 610-62-62
-			<span class="ih1">Тел/Факс:</span>
-			+38 (056) 789-04-24
-			<span class="ih1">e-mail: Vikkon@3g.ua</span>
-
-    	</div>
-
-		<div style="width:100px; height:15px; clear:both; margin-top: 0px"></div>
-		<div id="contact2" >
-			<div class="ih2" style="margin-top: -10px">Додатково надаємо:</div>
+	<header id="head">
+		<a id="logo" href="../../" title="Головна">
+			<img src="../../assets/img/theme/logo.png" width="119" height="88" alt="ВІККОН — на головну">
+		</a>
+		<nav id="menu_head" aria-label="Головне меню">
 			<ul>
-				<li>Вивіз брухту</li>
-				<li>Доставку брухту</li>
+				<li><a href="../../">Головна</a></li>
+				<li><a href="../buy_scrap/" aria-current="page">Купівля брухту</a></li>
+				<li><a href="../scrap_implementation/">Реалізація брухту</a></li>
+				<li><a href="../contacts/">Контакти</a></li>
 			</ul>
-		</div>
+		</nav>
+	</header>
 
-		<div class="" id="contact3"></div>
+	<main id="main">
+		<article id="content" tabindex="-1">
+			<header id="top_content">
+				<h1>Купівля брухту</h1>
+			</header>
 
-    	<div id="side_foto">
-    		    	</div>
-
-    </div>
-<!--
-	<div class="main_center">
-		<div class="main_more">
-			<h2>Додатково</h2>
-		</div>
-
-	</div>
--->
-	<div class="main_center utp_blocks">
-		<div class="block">
-			<img src="/themes/vikkon/res/images/utp_1.png" alt="" />
-			<div class="text">
-				Здійснюємо вивезення брухту
+			<div id="img_top_content" aria-hidden="true">
+				<img src="../../assets/img/banners/baner7.jpg" alt="" class="active">
+				<img src="../../assets/img/banners/baner1.jpg" alt="">
+				<img src="../../assets/img/banners/baner6.jpg" alt="">
+				<img src="../../assets/img/banners/baner2.jpg" alt="">
+				<img src="../../assets/img/banners/baner8.jpg" alt="">
+				<img src="../../assets/img/banners/baner9.jpg" alt="">
+				<img src="../../assets/img/banners/baner10.jpg" alt="">
 			</div>
-		</div>
 
-		<div class="block">
-			<img src="/themes/vikkon/res/images/utp_2.png" alt="" />
-			<div class="text">
-				Розрахунок в будь-якій формі
+			<div id="texta">
+				<p><time datetime="2026-11-04">2026-11-04</time></p>
+
+				<table class="price-table">
+					<caption class="visually-hidden">Ціни на брухт, грн за 1 тонну без ПДВ, станом на 04.11.2026</caption>
+					<thead class="visually-hidden">
+						<tr>
+							<th scope="col">Вид брухту</th>
+							<th scope="col">Ціна, грн/т</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr><th scope="colgroup" colspan="2">Кольорові метали (Акт №57/16)</th></tr>
+						<tr><th scope="row">Мідь</th><td>510-520 000,00</td></tr>
+						<tr><th scope="row">Мідь М-1</th><td>520-530 000,00</td></tr>
+						<tr><th scope="row">Латунь</th><td>300-310 000,00</td></tr>
+						<tr><th scope="row">ОцС/БраЖ</th><td>310-320 000,00</td></tr>
+						<tr><th scope="row">Титан</th><td>75 000,00</td></tr>
+						<tr><th scope="row">Алюміній</th><td>55-64 000,00</td></tr>
+						<tr><th scope="row">Алюміній електротехнічний</th><td>105-113 000,00</td></tr>
+						<tr><th scope="row">Алюмієвий профіль</th><td>95-100 000,00</td></tr>
+						<tr><th scope="row">Алюмінієва банка</th><td>55 000,00</td></tr>
+						<tr><th scope="row">Свинець</th><td>63-68 000,00</td></tr>
+						<tr><th scope="row">ЦАМ</th><td>70-80 000,00</td></tr>
+						<tr><th scope="row">Магній</th><td>35-40 000,00</td></tr>
+						<tr><th scope="row">Стружка алюмінієва</th><td>47-52 000,00</td></tr>
+						<tr><th scope="row">Стружка мідна</th><td>450-455 000,00</td></tr>
+						<tr><th scope="row">Стружка бронзова і латунна</th><td>290-295 000,00</td></tr>
+						<tr><th scope="row">Радіатор</th><td>300-310 000,00</td></tr>
+						<tr><th scope="row">Стружка титана</th><td>40 000,00</td></tr>
+						<tr class="empty-row" aria-hidden="true"><td></td><td></td></tr>
+					</tbody>
+					<tbody>
+						<tr><th scope="colgroup" colspan="2">Чорні метали (Акт №56/16)</th></tr>
+						<tr><th scope="row">Брухт нержавіючої сталі</th><td>17-20 000,00</td></tr>
+						<tr><th scope="row">Стружка нержавіючої сталі</th><td>6 000,00</td></tr>
+						<tr><th scope="row">Брухт оцинкованний, легковаговий</th><td>1 000,00</td></tr>
+						<tr><th scope="row">Брухт чорних металів</th><td>1 000,00</td></tr>
+						<tr><th scope="row">Стружка стальна</th><td><span aria-hidden="true">-</span><span class="visually-hidden">ціну не вказано</span></td></tr>
+						<tr class="empty-row" aria-hidden="true"><td></td><td></td></tr>
+					</tbody>
+				</table>
+
+				<div class="text-medium">
+					<p>Ціни станом на <time datetime="2026-11-04">04.11.2026 р.</time></p>
+					<p>Ціни зазначені в гривні за 1 тону без урахування ПДВ (пільга)</p>
+				</div>
+				<p class="price-note">Ціни, що вказані у прайсі, діють на основному складі.</p>
+				<p class="text-small">(пр-кт Богдана Хмельницького 171)</p>
+
+				<p class="text-medium gap-before-lg"><a href="../../docs/download/kp_11_01_2013.doc" download>Прайс для завантаження<span class="visually-hidden"> (файл DOC)</span></a></p>
 			</div>
-		</div>
+		</article>
 
-		<div class="block">
-			<img src="/themes/vikkon/res/images/utp_3.png" alt="" />
-			<div class="text">
-				Оформлення супровідної документації
-			</div>
-		</div>
+		<aside id="sidebar" aria-label="Контакти та нагороди">
+			<address id="contact">
+				<h2 class="ih1">Контактні телефони:</h2>
+				<p>
+					<a href="tel:+380675667481">+38 (067) 566-74-81</a>,<br>
+					<a href="tel:+380676106262">+38 (067) 610-62-62</a>
+				</p>
+				<h2 class="ih1">Тел/Факс:</h2>
+				<p><a href="tel:+380567890424">+38 (056) 789-04-24</a></p>
+				<p class="ih1">e-mail: <a href="mailto:Vikkon@3g.ua">Vikkon@3g.ua</a></p>
+			</address>
 
-		<div class="block">
-			<img src="/themes/vikkon/res/images/utp_4.png" alt="" />
-			<div class="text">
-				Найкраща <br>ціна
-			</div>
-		</div>
-	</div>
-    <div class="spacer"></div>
-</div>
+			<section id="contact2" aria-labelledby="extra-title">
+				<h2 class="ih2" id="extra-title">Додатково надаємо:</h2>
+				<ul>
+					<li>Вивіз брухту</li>
+					<li>Доставку брухту</li>
+				</ul>
+			</section>
 
+			<section id="contact3" aria-labelledby="awards-title">
+				<h2 class="visually-hidden" id="awards-title">Нагороди</h2>
+				<ul class="visually-hidden">
+					<li>Підприємство року</li>
+					<li>Відзнака «10 років компанії»</li>
+				</ul>
+			</section>
+		</aside>
 
+		<section aria-labelledby="utp-title">
+			<h2 class="visually-hidden" id="utp-title">Наші переваги</h2>
+			<ul class="utp_blocks">
+				<li class="block">
+					<img src="../../assets/img/theme/utp_1.png" width="45" height="35" alt="">
+					<p class="text">Здійснюємо вивезення брухту</p>
+				</li>
+				<li class="block">
+					<img src="../../assets/img/theme/utp_2.png" width="40" height="36" alt="">
+					<p class="text">Розрахунок в будь-якій формі</p>
+				</li>
+				<li class="block">
+					<img src="../../assets/img/theme/utp_3.png" width="38" height="38" alt="">
+					<p class="text">Оформлення супровідної документації</p>
+				</li>
+				<li class="block">
+					<img src="../../assets/img/theme/utp_4.png" width="34" height="40" alt="">
+					<p class="text">Найкраща <br>ціна</p>
+				</li>
+			</ul>
+		</section>
+	</main>
 
-
-<div id="footer">
-	<div id="menu_footer">
-       <ul><li><a  href="/ru/main/">Головна</a></li><li class="activ_li" ><a   href="/ru/buy_scrap/">&nbsp;
-</a></li><li><a  href="/ru/scrap_implementation/">Реалізація брухту</a></li><li><a  href="/ru/contacts/">Контакти</a></li></ul>    </div>
-</div>
-<div id="copy">
-	<div id="fnx" style="width: 500px; color: #7F8998; font-family: Verdana,Geneva,sans-serif; font-size: 10px;">
-       <a href="https://fnx.dp.ua" title="Феникс Индастри"><img src="/themes/vikkon/res/fenix_logo.png" /><br>
-        Створення сайтів Дніпро
-       </a>: &copy;2010 Фенікс Індастрі
-    </div>
-</div>
+	<footer>
+		<nav id="footer" aria-label="Меню в підвалі">
+			<ul id="menu_footer">
+				<li><a href="../../">Головна</a></li>
+				<li><a href="../buy_scrap/" aria-current="page">Купівля брухту</a></li>
+				<li><a href="../scrap_implementation/">Реалізація брухту</a></li>
+				<li><a href="../contacts/">Контакти</a></li>
+			</ul>
+		</nav>
+		<p id="fnx">
+			<a href="https://fnx.dp.ua" title="Фенікс Індастрі"><img src="../../assets/img/theme/fenix_logo.png" width="61" height="73" alt="Фенікс Індастрі"><br>
+			Створення сайтів Дніпро</a>: &copy;2010 Фенікс Індастрі
+		</p>
+	</footer>
 </body>
 </html>

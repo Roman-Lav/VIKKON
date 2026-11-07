@@ -1,272 +1,191 @@
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="uk">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Чорні метали | кольорові метали - Vikkon</title>
-<link rel="favicon.ico" href="/favicon.ico" type="image/x-icon">
-<link href="/themes/vikkon/res/style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="/themes/vikkon/res/js/jquery-1.4.1.min.js"></script>
- <script type="text/javascript">
-
-/***
-    Simple jQuery Slideshow Script
-    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
-***/
-
-function slideSwitch() {
-    var $active = $('#img_top_content IMG.active');
-
-    if ( $active.length == 0 ) $active = $('#img_top_content IMG:last');
-
-    // use this to pull the images in the order they appear in the markup
-    var $next =  $active.next().length ? $active.next()
-        : $('#img_top_content IMG:first');
-
-    // uncomment the 3 lines below to pull the images in random order
-
-    // var $sibs  = $active.siblings();
-    // var rndNum = Math.floor(Math.random() * $sibs.length );
-    // var $next  = $( $sibs[ rndNum ] );
-
-
-    $active.addClass('last-active');
-
-    $next.css({opacity: 0.0})
-        .addClass('active')
-        .animate({opacity: 1.0}, 3000, function() {
-            $active.removeClass('active last-active');
-        });
-}
-
-$(function() {
-    setInterval( "slideSwitch()", 4000 );
-});
-
-</script>
-
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=1000">
+	<title>Чорні метали | кольорові метали - Vikkon</title>
+	<meta name="description" content="Компанія «ВІККОН» продає брухт свинцю, нержавіючої сталі, чавуну, стружку та діловий брухт: арматуру, балки, швелер, куточки б/в.">
+	<link rel="icon" href="../../favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../../assets/css/style.css">
+	<script src="../../assets/js/slideshow.js" defer></script>
 </head>
-
 <body>
-<div id="head">
-	<div id="logo">
-    <a href="/" title="Главная"><img src="/themes/vikkon/res/logo.png" alt="vikon" /></a>
-    </div>
-  		<div id="menu_head">
-        	<ul><li><a href="/ru/main/">Головна</a></li><li><a href="/ru/buy_scrap/">Купівля брухту</a></li><li>Реалізація брухту</li><li><a href="/ru/contacts/">Контакти</a></li></ul>        </div>
-        <div id="menu_head2">
-        	        </div>
-</div>
-<div id="main">
-	<div id="content">
-    	<div id="top_content">
-        	<h1>Чорні метали | кольорові метали</h1>
-        </div>
-        <div id="img_top_content">
-        	<img src="/themes/vikkon/res/anim/baner7.jpg"  class="active">
-        	<img src="/themes/vikkon/res/anim/baner1.jpg">
-        	<img src="/themes/vikkon/res/anim/baner6.jpg">
-        	<img src="/themes/vikkon/res/anim/baner2.jpg">
-			<img src="/themes/vikkon/res/anim/baner8.jpg">
-			<img src="/themes/vikkon/res/anim/baner9.jpg">
-			<img src="/themes/vikkon/res/anim/baner10.jpg">
+	<a class="skip-link" href="#content">Перейти до змісту</a>
 
-        </div>
-        <div id="texta">
-        <p style="text-align: justify;"><span style="font-size: medium;">Компанія <strong><span style="font-weight: 700; text-align: justify;">&laquo;ВІККОН&raquo;</span></strong>&nbsp;реалізує різні види брухту чорних та кольорових металів.</span></p>
-<p><span style="font-size: medium;">Серед них:<br /></span></p>
-<ul>
-<li><span style="font-size: medium;">Брухт свинцю.</span></li>
-<li><span style="font-size: medium;">Брухт нержавіючої сталі.</span></li>
-<li><span style="font-size: medium;">Різні види стружок чорних та кольорових металів.</span></li>
-<li><span style="font-size: medium;">Брухт чавуну та інші види чорних металів.</span></li>
-<li><span style="font-size: medium;">Брухт ділових відходів металу.</span></li>
-</ul>
-<ul style="text-align: justify;">
-</ul>
-<table style="width: 100%; text-align: justify;" border="0">
-<tbody>
-<tr>
-<td style="text-align: center;">
-<p><img src="../../../../images/svinetc.jpg" alt="svinetc" width="350" height="210" /></p>
-<span style="font-size: medium;">Брухт свинцю</span> 
-<ul style="text-align: justify;">
-</ul>
-</td>
-<td style="text-align: center;">
-<p style="text-align: center;"><img src="../../../../images/nerj.jpg" alt="nerj" width="350" height="210" /></p>
-<span style="font-size: medium;">Брухт нержавіючої сталі</span> 
-<ul style="text-align: center;">
-</ul>
-</td>
-</tr>
-<tr>
-<td style="text-align: center;">
-<p style="text-align: center;"><img src="../../../../images/strujka.jpg" alt="strujka" width="350" height="210" /></p>
-<span style="font-size: medium;">Стружка чорних та кольорових металів</span> 
-<ul style="text-align: center;">
-</ul>
-</td>
-<td style="text-align: center;">
-<p><img src="../../../../images/tchugun.jpg" alt="tchugun" width="350" height="210" /></p>
-<span style="font-size: medium;">Брухт чавуну</span></td>
-</tr>
-</tbody>
-</table>
-<p style="text-align: justify;"><span style="font-size: medium;">Діловий брухт - це вироби металопрокату (арматура, труби, швелер, балка, тавр і т. п.), які були у вжитку, але їх можна використовувати повторно.</span></p>
-<p style="text-align: justify;"><span style="font-size: medium;"><br /></span></p>
-<p style="text-align: justify;"><span style="font-size: medium;">У чому полягає вигідність покупки ділового брухту? Наприклад, Ви вирішили почати будівництво або ремонт дачі, будинка, невеликих виробничих будівель і споруд, але кошторис занадто високий через ціни на труби, куточки, арматуру та інші необхідні Вам матеріали. До того ж, пропоновані до продажу партії таких виробів дуже великі для Ваших робіт. Ми пропонуємо Вам значно знизити витрати на такі матеріали, купивши більш дешеві, але не менш якісні вироби, що були у вжитку. Ми допоможемо Вам ефективно вирішити цю проблему. У продажу є швелер, куточок, арматура, балка та інші види ділового брухту. Наші фахівці проконсультують Вас з будь-яких питань, пов`язаних з придбанням ділового брухту.</span></p>
-<table style="width: 100%; text-align: justify;" border="0" cellspacing="0" cellpadding="5">
-<tbody>
-<tr>
-<td>
-<p style="text-align: justify;"><span style="font-size: medium;">Компанія <strong>&laquo;Віккон&raquo;</strong> продає арматуру б/в у гарному стані, цілу, чи не кручену, різних розмірів і різного профільного типу (періодичного профілю і гладку).</span></p>
-</td>
-<td>
-<p><img src="../../../../images/armatura.jpeg" alt="armatura" /></p>
-</td>
-</tr>
-<tr>
-<td>
-<p style="text-align: justify;">&nbsp;</p>
-<div id="_mcePaste" style="position: absolute; left: -10000px; top: 778px; width: 1px; height: 1px; overflow: hidden;"><span style="font-size: x-small;">Двотаврова балка, так само відома, як двутавр, являє собою один з елементів складної конструкції, завдяки якій можна розподілити навантаження між декількома частинами споруди. Вона схожа собою на букву "Т", з її допомогою будують мости, стадіони, естакади, що несуть покриття, складні промислові покриття.</span></div>
-<span style="font-size: x-small;">
-<div id="_mcePaste" style="position: absolute; left: -10000px; top: 778px; width: 1px; height: 1px; overflow: hidden;">Компанія &laquo;Виккон&raquo; продає двотаврові балки б / у в хорошому стані.</div>
-<span style="font-size: medium;"> Двотаврова балка, так само відома, як двутавр, являє собою один з елементів складної конструкції, завдяки якій можна розподілити навантаження між декількома частинами споруди. Вона схожа собою на букву "Т", з її допомогою будують мости, стадіони, естакади, що несуть покриття, складні промислові покриття.<br />Компанія <strong>&laquo;Віккон&raquo;</strong> продає двотаврові балки б/в у гарному стані.</span></span>
-<p>&nbsp;</p>
-</td>
-<td>
-<p><img src="../../../../images/balki-1.jpg" alt="balki-1" width="150" height="150" /></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><span style="font-size: medium;">Швелер - це металевий гнутий профіль, який у розрізі нагадує букву "П"</span></p>
-<p><span style="font-size: medium;">Компанія <strong>&laquo;Віккон&raquo;</strong> продає б/в швелер різних серій (швелер серії У, П, Е, Л, С) та розмірів.</span></p>
-</td>
-<td>
-<p><img src="../../../../images/shveller.jpg" alt="shveller" width="150" height="150" /></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><span style="font-size: medium;">Куточки мають 2 види в залежності від довжини їх сторін: рівнополочні, полками.</span></p>
-<p><span style="font-size: medium;">Компанія <strong>&laquo;Віккон&raquo;</strong> продає б/в куточки різних видів і розмірів.</span></p>
-</td>
-<td>
-<p><img src="../../../../images/ygolok.jpeg" alt="ygolok" width="150" height="150" /></p>
-</td>
-</tr>
-<tr>
-<td><span style="font-size: medium;">Заготівки, прокат, вироби з міді, бронзи, латуні: (болванка, лист, пруток, дріт, шестигранник)</span></td>
-<td><img src="../../../../images/med-latun-bronza.jpg" alt="med-latun-bronza" width="150" height="150" /></td>
-</tr>
-<tr>
-<td><span style="font-size: medium;">Заготівки, прокат, вироби з міді, бронзи, латуні: (болванка, лист, пруток, дріт, шестигранник)</span></td>
-<td><img src="../../../../images/al-titan-nerj.jpg" alt="al-titan-nerj" width="150" height="150" /></td>
-</tr>
-</tbody>
-</table>        </div>
-    </div>
-    <div id="sidebar">
-    	<div id="search">
-    	<!--
-        	<form action="" method="get">
-            	<input name="q" type="text" value="q" size="20" maxlength="120" />
-                <button><img src="/themes/vikkon/res/lupe.png"  alt="search"/></button>
-            </form>
-        -->
-       
-
-<form action="/ru/search/" method="get">
-  <input name="q"
-  onfocus="this.value=''"  type="text" value="Поиск по сайту" size="20" maxlength="120" />
-
- <button><img src="/themes/vikkon/res/lupe.png"  alt="search"/></button>
-
-</form>
-        </div>
-    	<div id="side_katalog">
-                </div>
-        <div style="width:100px; height:15px; clear:both; margin-top: 22px"></div>
-    	<div id="contact">
-			<div class="ih1" style="margin-top: -10px">Контактні телефони:</div>
-			+38 (067) 566-74-81,<br>
-				+38 (067) 610-62-62
-			<span class="ih1">Тел/Факс:</span>
-			+38 (056) 789-04-24
-			<span class="ih1">e-mail: Vikkon@3g.ua</span>
-
-    	</div>
-
-		<div style="width:100px; height:15px; clear:both; margin-top: 0px"></div>
-		<div id="contact2" >
-			<div class="ih2" style="margin-top: -10px">Додатково надаємо:</div>
+	<header id="head">
+		<a id="logo" href="../../" title="Головна">
+			<img src="../../assets/img/theme/logo.png" width="119" height="88" alt="ВІККОН — на головну">
+		</a>
+		<nav id="menu_head" aria-label="Головне меню">
 			<ul>
-				<li>Вивіз брухту</li>
-				<li>Доставку брухту</li>
+				<li><a href="../../">Головна</a></li>
+				<li><a href="../buy_scrap/">Купівля брухту</a></li>
+				<li><a href="../scrap_implementation/" aria-current="page">Реалізація брухту</a></li>
+				<li><a href="../contacts/">Контакти</a></li>
 			</ul>
-		</div>
+		</nav>
+	</header>
 
-		<div class="" id="contact3"></div>
+	<main id="main">
+		<article id="content" tabindex="-1">
+			<header id="top_content">
+				<h1>Чорні метали | кольорові метали</h1>
+			</header>
 
-    	<div id="side_foto">
-    		    	</div>
-
-    </div>
-<!--
-	<div class="main_center">
-		<div class="main_more">
-			<h2>Додатково</h2>
-		</div>
-
-	</div>
--->
-	<div class="main_center utp_blocks">
-		<div class="block">
-			<img src="/themes/vikkon/res/images/utp_1.png" alt="" />
-			<div class="text">
-				Здійснюємо вивезення брухту
+			<div id="img_top_content" aria-hidden="true">
+				<img src="../../assets/img/banners/baner7.jpg" alt="" class="active">
+				<img src="../../assets/img/banners/baner1.jpg" alt="">
+				<img src="../../assets/img/banners/baner6.jpg" alt="">
+				<img src="../../assets/img/banners/baner2.jpg" alt="">
+				<img src="../../assets/img/banners/baner8.jpg" alt="">
+				<img src="../../assets/img/banners/baner9.jpg" alt="">
+				<img src="../../assets/img/banners/baner10.jpg" alt="">
 			</div>
-		</div>
 
-		<div class="block">
-			<img src="/themes/vikkon/res/images/utp_2.png" alt="" />
-			<div class="text">
-				Розрахунок в будь-якій формі
+			<div id="texta" class="text-medium">
+				<p class="justify">Компанія <strong>«ВІККОН»</strong> реалізує різні види брухту чорних та кольорових металів.</p>
+				<p>Серед них:</p>
+				<ul>
+					<li>Брухт свинцю.</li>
+					<li>Брухт нержавіючої сталі.</li>
+					<li>Різні види стружок чорних та кольорових металів.</li>
+					<li>Брухт чавуну та інші види чорних металів.</li>
+					<li>Брухт ділових відходів металу.</li>
+				</ul>
+
+				<ul class="gallery">
+					<li>
+						<figure>
+							<img src="../../assets/img/content/svinetc.jpg" width="350" height="210" alt="" loading="lazy">
+							<figcaption>Брухт свинцю</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="../../assets/img/content/nerj.jpg" width="350" height="210" alt="" loading="lazy">
+							<figcaption>Брухт нержавіючої сталі</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="../../assets/img/content/strujka.jpg" width="350" height="210" alt="" loading="lazy">
+							<figcaption>Стружка чорних та кольорових металів</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="../../assets/img/content/tchugun.jpg" width="350" height="210" alt="" loading="lazy">
+							<figcaption>Брухт чавуну</figcaption>
+						</figure>
+					</li>
+				</ul>
+
+				<section aria-labelledby="business-scrap-title" class="justify">
+					<h2 class="visually-hidden" id="business-scrap-title">Діловий брухт</h2>
+					<p>Діловий брухт - це вироби металопрокату (арматура, труби, швелер, балка, тавр і т. п.), які були у вжитку, але їх можна використовувати повторно.</p>
+					<p class="gap-before">У чому полягає вигідність покупки ділового брухту? Наприклад, Ви вирішили почати будівництво або ремонт дачі, будинка, невеликих виробничих будівель і споруд, але кошторис занадто високий через ціни на труби, куточки, арматуру та інші необхідні Вам матеріали. До того ж, пропоновані до продажу партії таких виробів дуже великі для Ваших робіт. Ми пропонуємо Вам значно знизити витрати на такі матеріали, купивши більш дешеві, але не менш якісні вироби, що були у вжитку. Ми допоможемо Вам ефективно вирішити цю проблему. У продажу є швелер, куточок, арматура, балка та інші види ділового брухту. Наші фахівці проконсультують Вас з будь-яких питань, пов’язаних з придбанням ділового брухту.</p>
+				</section>
+
+				<ul class="products">
+					<li>
+						<p class="justify">Компанія <strong>«Віккон»</strong> продає арматуру б/в у гарному стані, цілу, чи не кручену, різних розмірів і різного профільного типу (періодичного профілю і гладку).</p>
+						<img src="../../assets/img/content/armatura.jpeg" width="150" height="150" alt="Арматура б/в" loading="lazy">
+					</li>
+					<li>
+						<p>Двотаврова балка, так само відома, як двутавр, являє собою один з елементів складної конструкції, завдяки якій можна розподілити навантаження між декількома частинами споруди. Вона схожа собою на букву "Т", з її допомогою будують мости, стадіони, естакади, що несуть покриття, складні промислові покриття.<br>Компанія <strong>«Віккон»</strong> продає двотаврові балки б/в у гарному стані.</p>
+						<img src="../../assets/img/content/balki-1.jpg" width="150" height="150" alt="Двотаврові балки б/в" loading="lazy">
+					</li>
+					<li>
+						<div>
+							<p>Швелер - це металевий гнутий профіль, який у розрізі нагадує букву "П"</p>
+							<p>Компанія <strong>«Віккон»</strong> продає б/в швелер різних серій (швелер серії У, П, Е, Л, С) та розмірів.</p>
+						</div>
+						<img src="../../assets/img/content/shveller.jpg" width="150" height="150" alt="Швелер б/в" loading="lazy">
+					</li>
+					<li>
+						<div>
+							<p>Куточки мають 2 види в залежності від довжини їх сторін: рівнополочні, полками.</p>
+							<p>Компанія <strong>«Віккон»</strong> продає б/в куточки різних видів і розмірів.</p>
+						</div>
+						<img src="../../assets/img/content/ygolok.jpeg" width="150" height="150" alt="Металевий куточок б/в" loading="lazy">
+					</li>
+					<li>
+						<p>Заготівки, прокат, вироби з міді, бронзи, латуні: (болванка, лист, пруток, дріт, шестигранник)</p>
+						<img src="../../assets/img/content/med-latun-bronza.jpg" width="150" height="150" alt="Вироби з міді, бронзи, латуні" loading="lazy">
+					</li>
+					<li>
+						<p>Заготівки, прокат, вироби з міді, бронзи, латуні: (болванка, лист, пруток, дріт, шестигранник)</p>
+						<img src="../../assets/img/content/al-titan-nerj.jpg" width="150" height="150" alt="Вироби з алюмінію, титану, нержавіючої сталі" loading="lazy">
+					</li>
+				</ul>
 			</div>
-		</div>
+		</article>
 
-		<div class="block">
-			<img src="/themes/vikkon/res/images/utp_3.png" alt="" />
-			<div class="text">
-				Оформлення супровідної документації
-			</div>
-		</div>
+		<aside id="sidebar" aria-label="Контакти та нагороди">
+			<address id="contact">
+				<h2 class="ih1">Контактні телефони:</h2>
+				<p>
+					<a href="tel:+380675667481">+38 (067) 566-74-81</a>,<br>
+					<a href="tel:+380676106262">+38 (067) 610-62-62</a>
+				</p>
+				<h2 class="ih1">Тел/Факс:</h2>
+				<p><a href="tel:+380567890424">+38 (056) 789-04-24</a></p>
+				<p class="ih1">e-mail: <a href="mailto:Vikkon@3g.ua">Vikkon@3g.ua</a></p>
+			</address>
 
-		<div class="block">
-			<img src="/themes/vikkon/res/images/utp_4.png" alt="" />
-			<div class="text">
-				Найкраща <br>ціна
-			</div>
-		</div>
-	</div>
-    <div class="spacer"></div>
-</div>
+			<section id="contact2" aria-labelledby="extra-title">
+				<h2 class="ih2" id="extra-title">Додатково надаємо:</h2>
+				<ul>
+					<li>Вивіз брухту</li>
+					<li>Доставку брухту</li>
+				</ul>
+			</section>
 
+			<section id="contact3" aria-labelledby="awards-title">
+				<h2 class="visually-hidden" id="awards-title">Нагороди</h2>
+				<ul class="visually-hidden">
+					<li>Підприємство року</li>
+					<li>Відзнака «10 років компанії»</li>
+				</ul>
+			</section>
+		</aside>
 
+		<section aria-labelledby="utp-title">
+			<h2 class="visually-hidden" id="utp-title">Наші переваги</h2>
+			<ul class="utp_blocks">
+				<li class="block">
+					<img src="../../assets/img/theme/utp_1.png" width="45" height="35" alt="">
+					<p class="text">Здійснюємо вивезення брухту</p>
+				</li>
+				<li class="block">
+					<img src="../../assets/img/theme/utp_2.png" width="40" height="36" alt="">
+					<p class="text">Розрахунок в будь-якій формі</p>
+				</li>
+				<li class="block">
+					<img src="../../assets/img/theme/utp_3.png" width="38" height="38" alt="">
+					<p class="text">Оформлення супровідної документації</p>
+				</li>
+				<li class="block">
+					<img src="../../assets/img/theme/utp_4.png" width="34" height="40" alt="">
+					<p class="text">Найкраща <br>ціна</p>
+				</li>
+			</ul>
+		</section>
+	</main>
 
-
-<div id="footer">
-	<div id="menu_footer">
-       <ul><li><a  href="/ru/main/">Головна</a></li><li><a  href="/ru/buy_scrap/">&nbsp;
-</a></li><li class="activ_li" ><a   href="/ru/scrap_implementation/">Реалізація брухту</a></li><li><a  href="/ru/contacts/">Контакти</a></li></ul>    </div>
-</div>
-<div id="copy">
-	<div id="fnx" style="width: 500px; color: #7F8998; font-family: Verdana,Geneva,sans-serif; font-size: 10px;">
-       <a href="https://fnx.dp.ua" title="Феникс Индастри"><img src="/themes/vikkon/res/fenix_logo.png" /><br>
-        Створення сайтів Дніпро
-       </a>: &copy;2010 Фенікс Індастрі
-    </div>
-</div>
+	<footer>
+		<nav id="footer" aria-label="Меню в підвалі">
+			<ul id="menu_footer">
+				<li><a href="../../">Головна</a></li>
+				<li><a href="../buy_scrap/">Купівля брухту</a></li>
+				<li><a href="../scrap_implementation/" aria-current="page">Реалізація брухту</a></li>
+				<li><a href="../contacts/">Контакти</a></li>
+			</ul>
+		</nav>
+		<p id="fnx">
+			<a href="https://fnx.dp.ua" title="Фенікс Індастрі"><img src="../../assets/img/theme/fenix_logo.png" width="61" height="73" alt="Фенікс Індастрі"><br>
+			Створення сайтів Дніпро</a>: &copy;2010 Фенікс Індастрі
+		</p>
+	</footer>
 </body>
 </html>

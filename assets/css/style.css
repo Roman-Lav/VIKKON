@@ -1,0 +1,558 @@
+@charset "utf-8";
+/*
+ * ВІККОН — стили сайта.
+ * Визуально повторяют оригинальную тему themes/vikkon/res/style.css
+ * (те же размеры, цвета, шрифты и фоновые изображения), но написаны
+ * под семантическую разметку HTML5.
+ */
+
+/* ---------- База ---------- */
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background: #fff url(../img/theme/top_bg.png) repeat-x;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #000;
+}
+
+a {
+	text-decoration: none;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+img {
+	border: 0;
+}
+
+/* Видимый фокус только для клавиатуры — мышью вид не меняется */
+:focus-visible {
+	outline: 2px solid #a5bbde;
+	outline-offset: 2px;
+}
+
+/* Текст только для скринридеров */
+.visually-hidden {
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	white-space: nowrap;
+	border: 0;
+}
+
+/* Ссылка «Перейти до змісту»: появляется только при фокусе с клавиатуры */
+.skip-link {
+	position: absolute;
+	top: -100px;
+	left: 10px;
+	z-index: 100;
+	padding: 8px 14px;
+	background: #333b49;
+	color: #fff;
+	font-size: 13px;
+}
+.skip-link:focus {
+	top: 10px;
+}
+
+/* ---------- Шапка ---------- */
+
+#head {
+	width: 1000px;
+	height: 122px;
+	margin: 0 auto;
+	background: url(../img/theme/head_bg.png) no-repeat top center;
+}
+
+#logo {
+	float: left;
+	width: 119px;
+	height: 88px;
+	margin: 13px 35px;
+}
+#logo img {
+	display: block;
+}
+
+#menu_head,
+#menu_footer {
+	position: relative;
+	color: #B0B6C4;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+#menu_head {
+	top: 70px;
+}
+
+#menu_head ul,
+#menu_footer {
+	position: relative;
+	margin: 0;
+	padding-left: 40px;
+	list-style: none;
+}
+
+#menu_head li,
+#menu_footer li {
+	float: left;
+	margin: 0 15px;
+}
+
+#menu_head a {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+#menu_head a:hover,
+#menu_footer a:hover {
+	color: #a5bbde;
+}
+
+/* Текущая страница в шапке выглядит как обычный текст (как в оригинале) */
+#menu_head a[aria-current="page"],
+#menu_head a[aria-current="page"]:hover {
+	color: #B0B6C4;
+	font-size: 13px;
+	cursor: default;
+}
+
+/* ---------- Основная часть ---------- */
+
+#main {
+	position: relative;
+	display: flow-root; /* заменяет пустой div.spacer для очистки float */
+	width: 980px;
+	min-height: 600px;
+	margin: 0 auto;
+	background: url(../img/theme/bg_main.jpg) no-repeat bottom;
+}
+
+#content {
+	float: left;
+	width: 785px;
+	margin: 0;
+	padding: 0;
+}
+
+#content a {
+	color: #036;
+}
+#content a:hover {
+	color: #F00;
+}
+
+#top_content {
+	margin: 10px 0;
+}
+#top_content h1 {
+	margin: 0 0 0 35px;
+	color: #374457;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+/* Слайдшоу баннеров */
+#img_top_content {
+	position: relative;
+	float: right;
+	width: 750px;
+	height: 210px;
+	margin: 0 30px 0 -20px;
+}
+#img_top_content img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 8;
+	width: 750px;
+	height: 210px;
+	opacity: 0;
+	transition: opacity 3s;
+}
+#img_top_content img.active {
+	z-index: 10;
+	opacity: 1;
+}
+#img_top_content img.last-active {
+	z-index: 9;
+}
+
+/* Текст страницы */
+#texta {
+	float: left;
+	clear: none;
+	width: 743px;
+	margin: 0;
+	padding: 10px 0 20px 10px;
+}
+
+#texta p {
+	margin: 11px 0;
+}
+
+.text-medium,
+.text-medium p,
+.text-medium li {
+	font-size: medium;
+}
+
+.justify {
+	text-align: justify;
+}
+
+/* Главная: абзацы разделены пустой строкой, как в оригинале */
+#texta.text-spaced p + p {
+	margin-top: 41px;
+}
+/* В оригинале после текста шли пустые абзацы, удлинявшие колонку */
+#texta.text-spaced {
+	padding-bottom: 231px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/* ---------- Боковая колонка ---------- */
+
+#sidebar {
+	float: left;
+	width: 185px;
+	margin: 37px 0 0;
+}
+
+#contact,
+#contact2,
+#contact3 {
+	clear: both;
+	width: 183px;
+	padding: 250px 0 0 10px;
+	background-repeat: no-repeat;
+	color: #999;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: normal;
+}
+
+#contact {
+	height: 342px;
+	margin: 0 0 -240px;
+	background-image: url(../img/theme/contact.jpg);
+	font-size: 13px;
+}
+
+#contact2 {
+	height: 342px;
+	margin: 15px 0 -240px;
+	background-image: url(../img/theme/contact2.jpg);
+	font-size: 14px;
+}
+
+#contact3 {
+	height: 351px;
+	margin: 12px 0 -240px;
+	background-image: url(../img/theme/contact3.png);
+	font-size: 14px;
+}
+
+#contact a {
+	color: inherit;
+	font-family: inherit;
+}
+#contact a:hover {
+	color: #CCC;
+}
+
+#contact p {
+	margin: 0;
+}
+
+.ih1,
+.ih2 {
+	display: block;
+	clear: both;
+	margin: 0;
+	color: #CCC;
+	font-weight: 500;
+}
+.ih1 {
+	font-size: 13px;
+}
+.ih2 {
+	font-size: 14px;
+}
+#contact > .ih1:first-child,
+#contact2 > .ih2:first-child {
+	margin-top: -10px;
+}
+
+#contact2 ul {
+	margin: 14px 0;
+	padding-left: 13px;
+}
+
+/* ---------- Блоки преимуществ ---------- */
+
+.utp_blocks {
+	width: 980px;
+	margin: 0 auto;
+	padding: 15px 0;
+	list-style: none;
+}
+
+.utp_blocks .block {
+	float: left;
+	width: 210px;
+	height: 125px;
+	margin: 0 40px 30px 0;
+	background: #fff;
+	border: 2px solid #e7e7e7;
+	border-radius: 20px;
+}
+.utp_blocks .block:nth-child(4) {
+	margin-right: 0;
+}
+.utp_blocks .block img {
+	display: block;
+	margin: 20px auto 5px;
+}
+.utp_blocks .block .text {
+	display: table-cell;
+	vertical-align: middle;
+	width: 210px;
+	height: 65px;
+	margin: 0;
+	padding: 0 20px;
+	color: #434343;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 18px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/* ---------- Подвал ---------- */
+
+#footer {
+	height: 62px;
+	margin: 0;
+	background: url(../img/theme/bg_footer_mnu.png) no-repeat center;
+	text-align: center;
+}
+
+#menu_footer {
+	top: 24px;
+	width: 540px;
+	margin: 0 auto;
+}
+
+#menu_footer a {
+	color: #fff;
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+#fnx {
+	position: relative;
+	width: 500px;
+	margin: 5px auto;
+	color: #7F8998;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	text-align: center;
+}
+#fnx a {
+	color: #7f8998;
+	font-size: 10px;
+	opacity: 0.5;
+}
+#fnx a:hover,
+#fnx a:focus-visible {
+	opacity: 1;
+}
+
+/* ---------- Купівля брухту: таблица цен ---------- */
+
+.price-table {
+	width: 100%;
+	border: 1px solid #898989;
+	border-spacing: 0;
+	text-align: center;
+}
+.price-table th,
+.price-table td {
+	padding: 11px 1px;
+	border: 1px inset #808080;
+	font-size: medium;
+	text-align: center;
+}
+.price-table th[scope="row"] {
+	width: 54%;
+	font-weight: bold;
+}
+.price-table th[scope="colgroup"] {
+	font-size: large;
+}
+.price-table .empty-row td {
+	height: 19px;
+}
+
+.price-note {
+	color: #ff0000;
+	font-size: small;
+	font-weight: bold;
+}
+
+/* ---------- Реалізація брухту ---------- */
+
+.text-medium ul {
+	margin: 11px 0;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px 4px;
+	margin: 16px 0;
+	padding: 0;
+	list-style: none;
+}
+.gallery figure {
+	margin: 0;
+	text-align: center;
+}
+.gallery img {
+	display: block;
+	margin: 11px auto 13px;
+}
+.gallery figcaption {
+	font-size: medium;
+}
+
+.products {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.products li {
+	display: grid;
+	min-height: 150px;
+	margin: 0 0 30px;
+	text-align: center;
+	grid-template-columns: 1fr 160px;
+	align-items: center;
+	gap: 0 10px;
+	padding: 5px;
+}
+.products img {
+	display: block;
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	object-fit: cover;
+}
+
+/* ---------- Контакти ---------- */
+
+.contacts h2 {
+	margin: 52px 0 11px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: medium;
+	font-weight: bold;
+}
+
+.contacts address {
+	font-size: small;
+	font-style: normal;
+}
+.contacts address p {
+	margin: 11px 0;
+}
+
+.contacts h3,
+.contacts h4 {
+	margin: 11px 0;
+	font-size: small;
+	font-weight: bold;
+}
+
+.contact-cols {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(max-content, 1fr));
+	margin: 0 0 11px;
+	font-size: small;
+	text-align: center;
+}
+.contact-cols h3,
+.contact-cols h4 {
+	margin: 2px 0;
+}
+.contact-cols ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.contact-cols li {
+	margin: 2px 0;
+}
+.contact-cols--two > :last-child {
+	grid-column: 3;
+}
+
+#content .contacts a {
+	color: inherit;
+}
+#content .contacts a:hover {
+	color: #F00;
+}
+
+.contact-email-main {
+	font-size: x-small;
+	font-weight: bold;
+}
+
+.map {
+	margin: 11px 0 30px;
+	text-align: center;
+}
+.map img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+/* ---------- Доступность: меньше анимации ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+	#img_top_content img {
+		transition: none;
+	}
+}
+
+/* ---------- Вспомогательные ---------- */
+
+.text-small {
+	font-size: small;
+}
+#texta .gap-before {
+	margin-top: 41px;
+}
+#texta .gap-before-lg {
+	margin-top: 52px;
+}
