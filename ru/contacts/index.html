@@ -1,0 +1,260 @@
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Контакти - Vikkon</title>
+<link rel="favicon.ico" href="/favicon.ico" type="image/x-icon">
+<link href="/themes/vikkon/res/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/themes/vikkon/res/js/jquery-1.4.1.min.js"></script>
+ <script type="text/javascript">
+
+/***
+    Simple jQuery Slideshow Script
+    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+***/
+
+function slideSwitch() {
+    var $active = $('#img_top_content IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#img_top_content IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#img_top_content IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 3000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 4000 );
+});
+
+</script>
+
+</head>
+
+<body>
+<div id="head">
+	<div id="logo">
+    <a href="/" title="Главная"><img src="/themes/vikkon/res/logo.png" alt="vikon" /></a>
+    </div>
+  		<div id="menu_head">
+        	<ul><li><a href="/ru/main/">Головна</a></li><li><a href="/ru/buy_scrap/">Купівля брухту</a></li><li><a href="/ru/scrap_implementation/">Реалізація брухту</a></li><li>Контакти</li></ul>        </div>
+        <div id="menu_head2">
+        	        </div>
+</div>
+<div id="main">
+	<div id="content">
+    	<div id="top_content">
+        	<h1>Контакти</h1>
+        </div>
+        <div id="img_top_content">
+        	<img src="/themes/vikkon/res/anim/baner7.jpg"  class="active">
+        	<img src="/themes/vikkon/res/anim/baner1.jpg">
+        	<img src="/themes/vikkon/res/anim/baner6.jpg">
+        	<img src="/themes/vikkon/res/anim/baner2.jpg">
+			<img src="/themes/vikkon/res/anim/baner8.jpg">
+			<img src="/themes/vikkon/res/anim/baner9.jpg">
+			<img src="/themes/vikkon/res/anim/baner10.jpg">
+
+        </div>
+        <div id="texta">
+        <p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><span style="font-family: verdana, geneva; font-size: medium; font-weight: bold;">Контактна інформація</span></p>
+<p style="text-align: center;"><span style="font-size: medium;"><span style="font-size: small;">Юридична адреса:&nbsp;<span style="text-align: center;">49005 м. Дніпро,&nbsp;</span><span style="text-align: center;">пр-т Дмитра Яворницького 7/13<br /></span></span></span><span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p style="text-align: center;"><span style="font-size: medium;"><span style="font-size: small;"><span style="text-align: center;">&nbsp;Склад:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="text-align: center;">49000 м. Дніпро, п<span style="text-align: center;">р-т Богдана Хмельницького, 171<br /></span></span></span></span></span><span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<table style="width: 100%; text-align: center;" border="0">
+<tbody>
+<tr>
+<td><span style="font-size: small; font-weight: bold; text-align: center;">Телефони:</span></td>
+<td><span style="font-size: small; font-weight: bold;">E-mail:</span></td>
+<td><span style="font-size: small; font-weight: bold; text-align: center;">Ми працюємо:</span></td>
+</tr>
+<tr>
+<td><span style="font-size: small; text-align: center;">(067) 566-74-81</span></td>
+<td><strong><span style="font-size: x-small;">vikkon.2026@gmail.com</span></strong></td>
+<td style="text-align: center;"><span style="font-size: small;">Понеділок - П`ятниця з<span style="font-size: small;">&nbsp;8:00 до 18:00</span></span></td>
+</tr>
+<tr>
+<td><span style="font-size: small; text-align: center;">(067) 610-62-62</span></td>
+<td><span style="font-size: small;">vikkon@3g.ua</span></td>
+<td style="text-align: center;"><span style="font-size: small;">Перерва&nbsp;<span style="font-size: small;">з 13:00 до 14:00</span></span></td>
+</tr>
+<tr>
+<td><br /></td>
+<td>&nbsp;</td>
+<td style="text-align: center;"><span style="font-size: small;">Субота - Неділя Вихідний</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;"><strong><span style="font-size: small;">Мапа проїзду: Основний склад</span></strong></p>
+<table style="width: 100%; text-align: center;" border="0">
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="../../../../images/hmel.jpg" alt="map2_05" width="750" height="450" /></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><span style="font-size: small; font-weight: bold; text-align: center;">Мапа проїзду: Пункт прийому брухту</span></p>
+<p style="text-align: center;"><span style="font-size: small; font-weight: text-align;"><span style="font-size: small; text-align: center;">49000 м. Дніпро, вул. Шинна, 23</span></span></p>
+<table style="width: 100%; text-align: center;" border="0">
+<tbody>
+<tr>
+<td><span style="font-size: small; font-weight: bold;">Телефон:</span></td>
+<td><br /></td>
+<td><span style="font-size: x-small;"><strong><span style="font-size: small; font-weight: 700; text-align: center;">Ми працюємо:</span></strong></span></td>
+</tr>
+<tr>
+<td><br /></td>
+<td>&nbsp;</td>
+<td><span style="font-size: small;"><span style="font-size: small; text-align: center;">Понеділок - П`ятниця з</span>&nbsp;8:00 до 18:00</span></td>
+</tr>
+<tr>
+<td><span style="font-size: small;">(098) 021-33-91</span></td>
+<td><br /></td>
+<td><span style="font-size: small; text-align: center;">Субота - Неділя з</span><span style="font-size: small; text-align: center;">&nbsp;8:00 до 17:00</span></td>
+</tr>
+<tr>
+<td><br /></td>
+<td>&nbsp;</td>
+<td><br /></td>
+</tr>
+</tbody>
+</table>
+<table style="width: 100%; text-align: center;" border="0">
+<tbody>
+<tr>
+<td>
+<p style="text-align: center;"><img style="font-size: small; font-weight: bold; text-align: center;" src="../../../../images/shin.jpg" alt="map2_05" width="750" height="450" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;"><span style="font-size: small; font-weight: text-align;"><span style="font-size: small;"> </span></span></p>
+<table style="width: 969px; text-align: center;" border="0">
+<tbody>
+</tbody>
+</table>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><span style="font-size: small; font-weight: text-align;"><span style="font-size: small;">&nbsp;</span></span></p>        </div>
+    </div>
+    <div id="sidebar">
+    	<div id="search">
+    	<!--
+        	<form action="" method="get">
+            	<input name="q" type="text" value="q" size="20" maxlength="120" />
+                <button><img src="/themes/vikkon/res/lupe.png"  alt="search"/></button>
+            </form>
+        -->
+       
+
+<form action="/ru/search/" method="get">
+  <input name="q"
+  onfocus="this.value=''"  type="text" value="Поиск по сайту" size="20" maxlength="120" />
+
+ <button><img src="/themes/vikkon/res/lupe.png"  alt="search"/></button>
+
+</form>
+        </div>
+    	<div id="side_katalog">
+                </div>
+        <div style="width:100px; height:15px; clear:both; margin-top: 22px"></div>
+    	<div id="contact">
+			<div class="ih1" style="margin-top: -10px">Контактні телефони:</div>
+			+38 (067) 566-74-81,<br>
+				+38 (067) 610-62-62
+			<span class="ih1">Тел/Факс:</span>
+			+38 (056) 789-04-24
+			<span class="ih1">e-mail: Vikkon@3g.ua</span>
+
+    	</div>
+
+		<div style="width:100px; height:15px; clear:both; margin-top: 0px"></div>
+		<div id="contact2" >
+			<div class="ih2" style="margin-top: -10px">Додатково надаємо:</div>
+			<ul>
+				<li>Вивіз брухту</li>
+				<li>Доставку брухту</li>
+			</ul>
+		</div>
+
+		<div class="" id="contact3"></div>
+
+    	<div id="side_foto">
+    		    	</div>
+
+    </div>
+<!--
+	<div class="main_center">
+		<div class="main_more">
+			<h2>Додатково</h2>
+		</div>
+
+	</div>
+-->
+	<div class="main_center utp_blocks">
+		<div class="block">
+			<img src="/themes/vikkon/res/images/utp_1.png" alt="" />
+			<div class="text">
+				Здійснюємо вивезення брухту
+			</div>
+		</div>
+
+		<div class="block">
+			<img src="/themes/vikkon/res/images/utp_2.png" alt="" />
+			<div class="text">
+				Розрахунок в будь-якій формі
+			</div>
+		</div>
+
+		<div class="block">
+			<img src="/themes/vikkon/res/images/utp_3.png" alt="" />
+			<div class="text">
+				Оформлення супровідної документації
+			</div>
+		</div>
+
+		<div class="block">
+			<img src="/themes/vikkon/res/images/utp_4.png" alt="" />
+			<div class="text">
+				Найкраща <br>ціна
+			</div>
+		</div>
+	</div>
+    <div class="spacer"></div>
+</div>
+
+
+
+
+<div id="footer">
+	<div id="menu_footer">
+       <ul><li><a  href="/ru/main/">Головна</a></li><li><a  href="/ru/buy_scrap/">&nbsp;
+</a></li><li><a  href="/ru/scrap_implementation/">Реалізація брухту</a></li><li class="activ_li" ><a   href="/ru/contacts/">Контакти</a></li></ul>    </div>
+</div>
+<div id="copy">
+	<div id="fnx" style="width: 500px; color: #7F8998; font-family: Verdana,Geneva,sans-serif; font-size: 10px;">
+       <a href="https://fnx.dp.ua" title="Феникс Индастри"><img src="/themes/vikkon/res/fenix_logo.png" /><br>
+        Створення сайтів Дніпро
+       </a>: &copy;2010 Фенікс Індастрі
+    </div>
+</div>
+</body>
+</html>
