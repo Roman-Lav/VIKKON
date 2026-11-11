@@ -16,6 +16,10 @@
 		document.addEventListener('keydown', (e) => {
 			if (e.key === 'Escape') setOpen(false);
 		});
+		// Пункт меню ведёт к блоку на этой же странице — после клика меню закрываем.
+		nav.addEventListener('click', (e) => {
+			if (e.target.closest('a')) setOpen(false);
+		});
 	}
 
 	// Картинки .zoom: клик открывает на весь экран, повторный клик (или Esc) закрывает.
@@ -59,12 +63,25 @@
 	// По нему шапка заливается фоном, а металлический паттерн первого экрана гаснет.
 	const top = document.querySelector('.to-top');
 	const root = document.documentElement;
+	const headerEl = document.querySelector('.site-header .nav');
+	const headerHeight = () => (headerEl ? headerEl.offsetHeight : 0);
+	const spy = Array.from(document.querySelectorAll('.site-nav a[href^="#"]'))
+		.map((link) => ({ link, target: document.getElementById(link.getAttribute('href').slice(1)) }))
+		.filter((item) => item.target);
 	let ticking = false;
 	const update = () => {
 		ticking = false;
 		const y = window.scrollY;
 		root.style.setProperty('--scroll', Math.min(1, y / 360).toFixed(3));
 		if (top) top.classList.toggle('show', y > 600);
+
+		// Подсветка пункта меню для раздела, который сейчас на экране.
+		const line = y + headerHeight() + 40;
+		let current = spy.length ? spy[0] : null;
+		for (const item of spy) {
+			if (item.target.getBoundingClientRect().top + y <= line) current = item;
+		}
+		for (const item of spy) item.link.classList.toggle('is-active', item === current);
 	};
 	window.addEventListener('scroll', () => {
 		if (!ticking) {

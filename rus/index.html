@@ -20,18 +20,18 @@
 
 	<header class="site-header">
 		<div class="container nav">
-			<a class="brand" href="./" title="Главная">
+			<a class="brand" href="#top" title="Главная">
 				<img src="../assets/img/theme/logo-hd.png" width="476" height="352" alt="ВИККОН — на главную">
 			</a>
 			<nav class="site-nav" id="site-nav" aria-label="Главное меню">
 				<ul>
-					<li><a href="./" aria-current="page">Главная</a></li>
-					<li><a href="buy_scrap/">Покупка лома</a></li>
-					<li><a href="scrap_implementation/">Реализация лома</a></li>
-					<li><a href="contacts/">Контакты</a></li>
+					<li><a href="#top">Главная</a></li>
+					<li><a href="#prices">Цены</a></li>
+					<li><a href="#about">О компании</a></li>
+					<li><a href="#contacts">Контакты</a></li>
 				</ul>
 			</nav>
-			<a class="btn btn--sm nav-cta" href="tel:+380675667481"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Позвонить</a>
+			<a class="btn btn--sm nav-cta" href="tel:+380675667481"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> <span>Позвонить</span></a>
 			<a class="lang" href="../" lang="uk" hreflang="uk" aria-label="Українська версія сайту">UA</a>
 			<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Меню"><span></span></button>
 		</div>
@@ -49,7 +49,6 @@
 					<ul class="hero-contacts">
 						<li><a href="tel:+380675667481">+38 (067) 566-74-81</a></li>
 						<li><a href="tel:+380676106262">+38 (067) 610-62-62</a></li>
-						<li><span>Тел/Факс:</span> <a href="tel:+380567890424">+38 (056) 789-04-24</a></li>
 						<li><a href="mailto:Vikkon@3g.ua">Vikkon@3g.ua</a></li>
 					</ul>
 				</div>
@@ -71,34 +70,67 @@
 			<div class="container">Осуществляем вывоз лома — расчёт в любой форме, сопроводительная документация и лучшая цена</div>
 		</div>
 
-		<section class="section" aria-labelledby="utp-title">
+		<section class="section" id="prices" aria-labelledby="prices-title">
 			<div class="container">
 				<div class="section-title">
-					<p class="eyebrow">Почему «ВИККОН»</p>
-					<h2 id="utp-title">Наши преимущества</h2>
+					<p class="eyebrow">Покупка лома</p>
+					<h2 id="prices-title">Цены на лом</h2>
 				</div>
-				<ul class="benefits">
-					<li class="benefit">
-						<span class="benefit__icon"><img src="../assets/img/theme/utp_1.png" width="45" height="35" alt=""></span>
-						<p class="benefit__text">Осуществляем вывоз лома</p>
-					</li>
-					<li class="benefit">
-						<span class="benefit__icon"><img src="../assets/img/theme/utp_2.png" width="40" height="36" alt=""></span>
-						<p class="benefit__text">Расчёт в любой форме</p>
-					</li>
-					<li class="benefit">
-						<span class="benefit__icon"><img src="../assets/img/theme/utp_3.png" width="38" height="38" alt=""></span>
-						<p class="benefit__text">Оформление сопроводительной документации</p>
-					</li>
-					<li class="benefit">
-						<span class="benefit__icon"><img src="../assets/img/theme/utp_4.png" width="34" height="40" alt=""></span>
-						<p class="benefit__text">Лучшая цена</p>
-					</li>
-				</ul>
+				<div class="price-meta">
+					<p>Цены по состоянию на <time datetime="2026-11-04">04.11.2026 г.</time></p>
+					<p>Цены указаны в гривне за 1 тонну без учёта НДС (льгота)</p>
+				</div>
+
+				<div class="table-wrap">
+					<table class="price-table">
+						<caption class="visually-hidden">Цены на лом, грн за 1 тонну без НДС, по состоянию на 04.11.2026</caption>
+						<thead>
+							<tr>
+								<th scope="col">Вид лома</th>
+								<th scope="col">Цена, грн/т</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr><th scope="colgroup" colspan="2">Цветные металлы (Акт №57/16)</th></tr>
+							<tr><th scope="row">Медь</th><td>510-520 000,00</td></tr>
+							<tr><th scope="row">Медь М-1</th><td>520-530 000,00</td></tr>
+							<tr><th scope="row">Латунь</th><td>300-310 000,00</td></tr>
+							<tr><th scope="row">ОцС/БраЖ</th><td>310-320 000,00</td></tr>
+							<tr><th scope="row">Титан</th><td>75 000,00</td></tr>
+							<tr><th scope="row">Алюминий</th><td>55-64 000,00</td></tr>
+							<tr><th scope="row">Алюминий электротехнический</th><td>105-113 000,00</td></tr>
+							<tr><th scope="row">Алюминиевый профиль</th><td>95-100 000,00</td></tr>
+							<tr><th scope="row">Алюминиевая банка</th><td>55 000,00</td></tr>
+							<tr><th scope="row">Свинец</th><td>63-68 000,00</td></tr>
+							<tr><th scope="row">ЦАМ</th><td>70-80 000,00</td></tr>
+							<tr><th scope="row">Магний</th><td>35-40 000,00</td></tr>
+							<tr><th scope="row">Стружка алюминиевая</th><td>47-52 000,00</td></tr>
+							<tr><th scope="row">Стружка медная</th><td>450-455 000,00</td></tr>
+							<tr><th scope="row">Стружка бронзовая и латунная</th><td>290-295 000,00</td></tr>
+							<tr><th scope="row">Радиатор</th><td>300-310 000,00</td></tr>
+							<tr><th scope="row">Стружка титана</th><td>40 000,00</td></tr>
+						</tbody>
+						<tbody>
+							<tr><th scope="colgroup" colspan="2">Чёрные металлы (Акт №56/16)</th></tr>
+							<tr><th scope="row">Лом нержавеющей стали</th><td>17-20 000,00</td></tr>
+							<tr><th scope="row">Стружка нержавеющей стали</th><td>6 000,00</td></tr>
+							<tr><th scope="row">Лом оцинкованный, легковесный</th><td>1 000,00</td></tr>
+							<tr><th scope="row">Лом чёрных металлов</th><td>1 000,00</td></tr>
+							<tr><th scope="row">Стружка стальная</th><td><span aria-hidden="true">-</span><span class="visually-hidden">цена не указана</span></td></tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="price-notes">
+					<p class="price-note">Цены, указанные в прайсе, действуют на основном складе.</p>
+					<p>(пр-т Богдана Хмельницкого 171)</p>
+				</div>
+
+				<p class="price-actions"><a class="btn" href="../docs/download/kp_11_01_2013.doc" download>Прайс для скачивания<span class="visually-hidden"> (файл DOC)</span></a></p>
 			</div>
 		</section>
 
-		<section class="section section--soft" aria-labelledby="about-title">
+		<section class="section section--soft" id="about" aria-labelledby="about-title">
 			<div class="container">
 				<div class="section-title">
 					<p class="eyebrow">О компании</p>
@@ -133,33 +165,99 @@
 			</div>
 		</section>
 
-		<section class="section" aria-labelledby="services-title">
+		<section class="section" aria-labelledby="utp-title">
 			<div class="container">
 				<div class="section-title">
-					<p class="eyebrow">Направления работы</p>
-					<h2 id="services-title">Что мы делаем</h2>
+					<p class="eyebrow">Почему «ВИККОН»</p>
+					<h2 id="utp-title">Наши преимущества</h2>
 				</div>
-				<ul class="services">
-					<li class="service">
-						<h3>Покупка лома</h3>
-						<p>Цветные и чёрные металлы: медь, латунь, алюминий, свинец, нержавеющая сталь. Актуальные цены в гривне за тонну.</p>
-						<a href="buy_scrap/">Смотреть прайс</a>
+				<ul class="benefits">
+					<li class="benefit">
+						<span class="benefit__icon"><img src="../assets/img/theme/utp_1.png" width="45" height="35" alt=""></span>
+						<p class="benefit__text">Осуществляем вывоз лома</p>
 					</li>
-					<li class="service">
-						<h3>Реализация лома</h3>
-						<p>Лом свинца, нержавеющей стали, чугуна, стружка и деловой лом: арматура, балки, швеллер, уголки б/у.</p>
-						<a href="scrap_implementation/">Что мы предлагаем</a>
+					<li class="benefit">
+						<span class="benefit__icon"><img src="../assets/img/theme/utp_2.png" width="40" height="36" alt=""></span>
+						<p class="benefit__text">Расчёт в любой форме</p>
 					</li>
-					<li class="service">
-						<h3>Демонтаж и вывоз</h3>
-						<p>Демонтаж металлоконструкций любой степени сложности, резка металла, погрузка и вывоз лома.</p>
-						<a href="contacts/">Связаться с нами</a>
+					<li class="benefit">
+						<span class="benefit__icon"><img src="../assets/img/theme/utp_3.png" width="38" height="38" alt=""></span>
+						<p class="benefit__text">Оформление сопроводительной документации</p>
+					</li>
+					<li class="benefit">
+						<span class="benefit__icon"><img src="../assets/img/theme/utp_4.png" width="34" height="40" alt=""></span>
+						<p class="benefit__text">Лучшая цена</p>
 					</li>
 				</ul>
 			</div>
 		</section>
 
-		<section class="cta metal" id="contact" aria-labelledby="cta-title">
+		<section class="section section--soft" id="contacts" aria-labelledby="contacts-title">
+			<div class="container">
+				<div class="section-title">
+					<p class="eyebrow">Контактная информация</p>
+					<h2 id="contacts-title">Контакты</h2>
+				</div>
+				<div class="contact-cards">
+					<section class="contact-card" aria-labelledby="c-addr">
+						<h3 id="c-addr">Адреса</h3>
+						<address>
+							<p>Юридический адрес: 49005 г. Днепр, пр-т Дмитрия Яворницкого 7/13</p>
+							<p>Склад: 49000 г. Днепр, пр-т Богдана Хмельницкого, 171</p>
+						</address>
+					</section>
+					<section class="contact-card" aria-labelledby="c-phones">
+						<h3 id="c-phones">Телефоны:</h3>
+						<ul>
+							<li><a href="tel:+380675667481">(067) 566-74-81</a></li>
+							<li><a href="tel:+380676106262">(067) 610-62-62</a></li>
+						</ul>
+						<h3 id="c-email" class="contact-card__next">E-mail:</h3>
+						<ul>
+							<li class="contact-email-main"><a href="mailto:vikkon.2026@gmail.com">vikkon.2026@gmail.com</a></li>
+							<li><a href="mailto:vikkon@3g.ua">vikkon@3g.ua</a></li>
+						</ul>
+					</section>
+					<section class="contact-card" aria-labelledby="c-hours">
+						<h3 id="c-hours">Мы работаем:</h3>
+						<ul>
+							<li>Понедельник - Пятница с 8:00 до 18:00</li>
+							<li>Перерыв с 13:00 до 14:00</li>
+							<li>Суббота - Воскресенье Выходной</li>
+						</ul>
+					</section>
+				</div>
+
+				<section class="location" aria-labelledby="map-main">
+					<div>
+						<h2 id="map-main">Карта проезда: Основной склад</h2>
+						<address>49000 г. Днепр, пр-т Богдана Хмельницкого, 171</address>
+					</div>
+					<figure class="location__map">
+						<img src="../assets/img/content/hmel.jpg" width="750" height="450" alt="Карта проезда к основному складу: г. Днепр, пр-т Богдана Хмельницкого, 171" loading="lazy">
+					</figure>
+				</section>
+
+				<section class="location" aria-labelledby="map-point">
+					<div>
+						<h2 id="map-point">Карта проезда: Пункт приёма лома</h2>
+						<address>49000 г. Днепр, ул. Шинная, 23</address>
+						<h3>Телефон:</h3>
+						<ul><li><a href="tel:+380980213391">(098) 021-33-91</a></li></ul>
+						<h3>Мы работаем:</h3>
+						<ul>
+							<li>Понедельник - Пятница с 8:00 до 18:00</li>
+							<li>Суббота - Воскресенье с 8:00 до 17:00</li>
+						</ul>
+					</div>
+					<figure class="location__map">
+						<img src="../assets/img/content/shin.jpg" width="750" height="450" alt="Карта проезда к пункту приёма лома: г. Днепр, ул. Шинная, 23" loading="lazy">
+					</figure>
+				</section>
+			</div>
+		</section>
+
+		<section class="cta metal" id="call" aria-labelledby="cta-title">
 			<div class="container">
 				<h2 id="cta-title">Телефоны для связи</h2>
 				<ul class="cta-phones">
@@ -173,8 +271,7 @@
 						<li>Вывоз лома</li>
 						<li>Доставку лома</li>
 					</ul>
-					<p>Тел/Факс: <a href="tel:+380567890424">+38 (056) 789-04-24</a><br>
-					e-mail: <a href="mailto:Vikkon@3g.ua">Vikkon@3g.ua</a></p>
+					<p>e-mail: <a href="mailto:Vikkon@3g.ua">Vikkon@3g.ua</a></p>
 				</div>
 			</div>
 		</section>
@@ -190,17 +287,16 @@
 				<nav aria-label="Меню в подвале">
 					<h2>Разделы</h2>
 					<ul>
-						<li><a href="./" aria-current="page">Главная</a></li>
-						<li><a href="buy_scrap/">Покупка лома</a></li>
-						<li><a href="scrap_implementation/">Реализация лома</a></li>
-						<li><a href="contacts/">Контакты</a></li>
+						<li><a href="#top">Главная</a></li>
+						<li><a href="#prices">Цены</a></li>
+						<li><a href="#about">О компании</a></li>
+						<li><a href="#contacts">Контакты</a></li>
 					</ul>
 				</nav>
 				<div>
 					<h2>Контакты</h2>
 					<p><a href="tel:+380675667481">+38 (067) 566-74-81</a><br>
-					<a href="tel:+380676106262">+38 (067) 610-62-62</a><br>
-					<a href="tel:+380567890424">+38 (056) 789-04-24</a> (тел/факс)</p>
+					<a href="tel:+380676106262">+38 (067) 610-62-62</a></p>
 					<p><a href="mailto:Vikkon@3g.ua">Vikkon@3g.ua</a></p>
 					<p>г. Днепр, пр-т Богдана Хмельницкого, 171</p>
 				</div>
