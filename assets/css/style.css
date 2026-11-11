@@ -285,8 +285,9 @@ ul {
 	display: block;
 	padding: 10px 12px;
 	color: #fff;
-	font-size: 15px;
+	font-size: 17px;
 	font-weight: 600;
+	letter-spacing: 0.04em;
 	white-space: nowrap;
 }
 .site-nav a:hover {
@@ -298,43 +299,11 @@ ul {
 	box-shadow: inset 0 -2px 0 var(--blue-500);
 }
 
-/* Кнопка языка: одна кнопка с другим языком (на UA-странице — RU и наоборот).
-   На широких экранах стоит отдельно в самом правом углу окна. */
-.lang {
-	display: inline-flex;
-	flex: none;
-	align-items: center;
-	justify-content: center;
-	min-width: 46px;
-	height: var(--header-btn);
-	margin-left: 10px;
-	padding: 0 12px;
-	border: 1px solid rgba(255, 255, 255, 0.35);
-	color: #fff;
-	font-size: 13px;
-	font-weight: 800;
-	letter-spacing: 0.08em;
-	line-height: 1;
-	transition: background 0.2s, color 0.2s, border-color 0.2s;
-}
-.lang:hover {
-	border-color: #fff;
-	background: #fff;
-	color: var(--navy-950);
-}
-@media (min-width: 1360px) {
-	.lang {
-		position: absolute;
-		top: 50%;
-		right: max(24px, env(safe-area-inset-right));
-		margin: 0;
-		transform: translateY(-50%);
-	}
-}
-
 .site-header .nav-cta {
 	height: var(--header-btn);
 	padding-block: 0;
+	font-size: 15px;
+	letter-spacing: 0.05em;
 }
 
 .nav-toggle {
@@ -894,6 +863,29 @@ ul {
 	margin: 0;
 }
 
+/* Переключатель языка в подвале, под разделами */
+.lang-toggle {
+	display: inline-flex;
+	margin-top: 22px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.lang-toggle a {
+	padding: 10px 16px;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 800;
+	letter-spacing: 0.08em;
+	line-height: 1;
+}
+.lang-toggle a:hover {
+	background: rgba(255, 255, 255, 0.12);
+	color: #fff;
+}
+.site-footer .lang-toggle a[aria-current="true"] {
+	background: #fff;
+	color: var(--navy-950);
+}
+
 .footer-bottom {
 	display: flex;
 	flex-wrap: wrap;
@@ -1265,17 +1257,7 @@ ul {
 		margin-left: auto;
 		padding-inline: 14px;
 	}
-	/* Кнопка языка — внутри раскрытого меню, под пунктами */
-	.lang {
-		order: 6;
-		margin: 0 0 14px;
-	}
-	.js .lang {
-		display: none;
-	}
-	.js .site-header.menu-open .lang {
-		display: inline-flex;
-	}
+
 	.site-nav {
 		flex-basis: 100%;
 		order: 5;
