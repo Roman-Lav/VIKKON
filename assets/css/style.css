@@ -60,6 +60,7 @@
 	--radius: 6px;
 	--container: 1120px;
 	--header-h: 84px;
+	--header-btn: 46px;
 	--font: "Manrope", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -305,7 +306,7 @@ ul {
 	align-items: center;
 	justify-content: center;
 	min-width: 46px;
-	height: 40px;
+	height: var(--header-btn);
 	margin-left: 10px;
 	padding: 0 12px;
 	border: 1px solid rgba(255, 255, 255, 0.35);
@@ -331,11 +332,16 @@ ul {
 	}
 }
 
+.site-header .nav-cta {
+	height: var(--header-btn);
+	padding-block: 0;
+}
+
 .nav-toggle {
 	display: none;
 	flex: none;
-	width: 46px;
-	height: 46px;
+	width: var(--header-btn);
+	height: var(--header-btn);
 	padding: 0;
 	border: 1px solid rgba(255, 255, 255, 0.25);
 	background: transparent;
@@ -949,10 +955,6 @@ ul {
 	color: var(--navy-800);
 	font-weight: 800;
 }
-.price-actions {
-	margin-top: 32px;
-}
-
 /* ---------- Реалізація брухту ---------- */
 
 .lead-list {
@@ -1150,7 +1152,12 @@ ul {
 	}
 	.about__side {
 		grid-template-columns: 1fr 220px;
-		align-items: start;
+		align-items: stretch;
+	}
+	.facts {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 	.contact-cards {
 		grid-template-columns: 1fr;
@@ -1173,7 +1180,14 @@ ul {
 	}
 	.nav {
 		flex-wrap: wrap;
+		align-content: flex-start;
 		gap: 0 12px;
+	}
+	/* Первая строка шапки всегда высотой с шапку, даже при раскрытом меню */
+	.brand {
+		display: flex;
+		align-items: center;
+		height: var(--header-h);
 	}
 	.brand img {
 		width: 68px;
@@ -1182,10 +1196,18 @@ ul {
 	.site-header .nav-cta {
 		width: auto;
 		margin-left: auto;
-		padding: 12px 14px;
+		padding-inline: 14px;
 	}
+	/* Кнопка языка — внутри раскрытого меню, под пунктами */
 	.lang {
-		margin-left: 0;
+		order: 6;
+		margin: 0 0 14px;
+	}
+	.js .lang {
+		display: none;
+	}
+	.js .site-header.menu-open .lang {
+		display: inline-flex;
 	}
 	.site-nav {
 		flex-basis: 100%;
@@ -1227,8 +1249,7 @@ ul {
 /* Узкий телефон: в шапке только значок трубки */
 @media (max-width: 520px) {
 	.site-header .nav-cta {
-		width: 46px;
-		height: 46px;
+		width: var(--header-btn);
 		padding: 0;
 		justify-content: center;
 	}
