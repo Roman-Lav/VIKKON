@@ -60,7 +60,7 @@
 	}
 
 	// --scroll: 0 вверху страницы → 1 после ~360px прокрутки.
-	// По нему шапка заливается фоном, а металлический паттерн первого экрана гаснет.
+	// По нему шапка заливается фоном страницы.
 	const top = document.querySelector('.to-top');
 	const root = document.documentElement;
 	const headerEl = document.querySelector('.site-header .nav');
