@@ -2,69 +2,73 @@
 <html lang="uk">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=1000">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<meta name="theme-color" content="#07111f">
 	<title>Контакти - Vikkon</title>
 	<meta name="description" content="Контакти компанії «ВІККОН» у Дніпрі: телефони, e-mail, адреси складу та пункту прийому брухту, графік роботи, мапа проїзду.">
+	<link rel="alternate" hreflang="uk" href="./">
+	<link rel="alternate" hreflang="ru" href="../../rus/contacts/">
 	<link rel="icon" href="../../favicon.ico" type="image/x-icon">
+	<link rel="preload" href="../../assets/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="stylesheet" href="../../assets/css/style.css">
-	<script src="../../assets/js/slideshow.js" defer></script>
+	<script>document.documentElement.classList.add('js');</script>
+	<script src="../../assets/js/site.js" defer></script>
 </head>
-<body>
+<body id="top">
 	<a class="skip-link" href="#content">Перейти до змісту</a>
 
-	<header id="head">
-		<a id="logo" href="../../" title="Головна">
-			<img src="../../assets/img/theme/logo.png" width="119" height="88" alt="ВІККОН — на головну">
-		</a>
-		<nav id="menu_head" aria-label="Головне меню">
-			<ul>
-				<li><a href="../../">Головна</a></li>
-				<li><a href="../buy_scrap/">Купівля брухту</a></li>
-				<li><a href="../scrap_implementation/">Реалізація брухту</a></li>
-				<li><a href="../contacts/" aria-current="page">Контакти</a></li>
-			</ul>
-		</nav>
+	<header class="site-header">
+		<div class="container nav">
+			<a class="brand" href="../../" title="Головна">
+				<img src="../../assets/img/theme/logo-hd.png" width="476" height="352" alt="ВІККОН — на головну">
+			</a>
+			<nav class="site-nav" id="site-nav" aria-label="Головне меню">
+				<ul>
+					<li><a href="../../">Головна</a></li>
+					<li><a href="../buy_scrap/">Купівля брухту</a></li>
+					<li><a href="../scrap_implementation/">Реалізація брухту</a></li>
+					<li><a href="./" aria-current="page">Контакти</a></li>
+				</ul>
+			</nav>
+			<a class="btn btn--sm nav-cta" href="tel:+380675667481"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Зателефонувати</a>
+			<a class="lang" href="../../rus/contacts/" lang="ru" hreflang="ru" aria-label="Русская версия сайта">RU</a>
+			<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Меню"><span></span></button>
+		</div>
 	</header>
 
-	<main id="main">
-		<article id="content" tabindex="-1">
-			<header id="top_content">
+	<main id="content" tabindex="-1">
+
+		<section class="page-hero metal">
+			<div class="container">
 				<h1>Контакти</h1>
-			</header>
-
-			<div id="img_top_content" aria-hidden="true">
-				<img src="../../assets/img/banners/baner7.jpg" alt="" class="active">
-				<img src="../../assets/img/banners/baner1.jpg" alt="">
-				<img src="../../assets/img/banners/baner6.jpg" alt="">
-				<img src="../../assets/img/banners/baner2.jpg" alt="">
-				<img src="../../assets/img/banners/baner8.jpg" alt="">
-				<img src="../../assets/img/banners/baner9.jpg" alt="">
-				<img src="../../assets/img/banners/baner10.jpg" alt="">
+				<p>Контактна інформація компанії «ВІККОН» у Дніпрі</p>
 			</div>
+		</section>
 
-			<div id="texta" class="contacts text-center">
-				<h2>Контактна інформація</h2>
-				<address>
-					<p>Юридична адреса: 49005 м. Дніпро, пр-т Дмитра Яворницького 7/13</p>
-					<p>Склад: 49000 м. Дніпро, пр-т Богдана Хмельницького, 171</p>
-				</address>
-
-				<div class="contact-cols">
-					<section aria-labelledby="c-phones">
+		<section class="section" aria-labelledby="contacts-title">
+			<div class="container">
+				<h2 class="visually-hidden" id="contacts-title">Контактна інформація</h2>
+				<div class="contact-cards">
+					<section class="contact-card" aria-labelledby="c-addr">
+						<h3 id="c-addr">Адреси</h3>
+						<address>
+							<p>Юридична адреса: 49005 м. Дніпро, пр-т Дмитра Яворницького 7/13</p>
+							<p>Склад: 49000 м. Дніпро, пр-т Богдана Хмельницького, 171</p>
+						</address>
+					</section>
+					<section class="contact-card" aria-labelledby="c-phones">
 						<h3 id="c-phones">Телефони:</h3>
 						<ul>
 							<li><a href="tel:+380675667481">(067) 566-74-81</a></li>
 							<li><a href="tel:+380676106262">(067) 610-62-62</a></li>
 						</ul>
-					</section>
-					<section aria-labelledby="c-email">
-						<h3 id="c-email">E-mail:</h3>
+						<h3 id="c-email" class="contact-card__next">E-mail:</h3>
 						<ul>
 							<li class="contact-email-main"><a href="mailto:vikkon.2026@gmail.com">vikkon.2026@gmail.com</a></li>
 							<li><a href="mailto:vikkon@3g.ua">vikkon@3g.ua</a></li>
 						</ul>
 					</section>
-					<section aria-labelledby="c-hours">
+					<section class="contact-card" aria-labelledby="c-hours">
 						<h3 id="c-hours">Ми працюємо:</h3>
 						<ul>
 							<li>Понеділок - П’ятниця з 8:00 до 18:00</li>
@@ -74,97 +78,87 @@
 					</section>
 				</div>
 
-				<section class="map" aria-labelledby="map-main">
-					<h3 id="map-main">Мапа проїзду: Основний склад</h3>
-					<img src="../../assets/img/content/hmel.jpg" width="750" height="450" alt="Карта проїзду до основного складу: м. Дніпро, пр-т Богдана Хмельницького, 171" loading="lazy">
+				<section class="location" aria-labelledby="map-main">
+					<div>
+						<h2 id="map-main">Мапа проїзду: Основний склад</h2>
+						<address>49000 м. Дніпро, пр-т Богдана Хмельницького, 171</address>
+					</div>
+					<figure class="location__map">
+						<img src="../../assets/img/content/hmel.jpg" width="750" height="450" alt="Карта проїзду до основного складу: м. Дніпро, пр-т Богдана Хмельницького, 171" loading="lazy">
+					</figure>
 				</section>
 
-				<section class="map" aria-labelledby="map-point">
-					<h3 id="map-point">Мапа проїзду: Пункт прийому брухту</h3>
-					<address><p>49000 м. Дніпро, вул. Шинна, 23</p></address>
-					<div class="contact-cols contact-cols--two">
-						<section aria-labelledby="p-phone">
-							<h4 id="p-phone">Телефон:</h4>
-							<ul><li><a href="tel:+380980213391">(098) 021-33-91</a></li></ul>
-						</section>
-						<section aria-labelledby="p-hours">
-							<h4 id="p-hours">Ми працюємо:</h4>
-							<ul>
-								<li>Понеділок - П’ятниця з 8:00 до 18:00</li>
-								<li>Субота - Неділя з 8:00 до 17:00</li>
-							</ul>
-						</section>
+				<section class="location" aria-labelledby="map-point">
+					<div>
+						<h2 id="map-point">Мапа проїзду: Пункт прийому брухту</h2>
+						<address>49000 м. Дніпро, вул. Шинна, 23</address>
+						<h3>Телефон:</h3>
+						<ul><li><a href="tel:+380980213391">(098) 021-33-91</a></li></ul>
+						<h3>Ми працюємо:</h3>
+						<ul>
+							<li>Понеділок - П’ятниця з 8:00 до 18:00</li>
+							<li>Субота - Неділя з 8:00 до 17:00</li>
+						</ul>
 					</div>
-					<img src="../../assets/img/content/shin.jpg" width="750" height="450" alt="Карта проїзду до пункту прийому брухту: м. Дніпро, вул. Шинна, 23" loading="lazy">
+					<figure class="location__map">
+						<img src="../../assets/img/content/shin.jpg" width="750" height="450" alt="Карта проїзду до пункту прийому брухту: м. Дніпро, вул. Шинна, 23" loading="lazy">
+					</figure>
 				</section>
 			</div>
-		</article>
+		</section>
 
-		<aside id="sidebar" aria-label="Контакти та нагороди">
-			<address id="contact">
-				<h2 class="ih1">Контактні телефони:</h2>
-				<p>
-					<a href="tel:+380675667481">+38 (067) 566-74-81</a>,<br>
-					<a href="tel:+380676106262">+38 (067) 610-62-62</a>
-				</p>
-				<h2 class="ih1">Тел/Факс:</h2>
-				<p><a href="tel:+380567890424">+38 (056) 789-04-24</a></p>
-				<p class="ih1">e-mail: <a href="mailto:Vikkon@3g.ua">Vikkon@3g.ua</a></p>
-			</address>
-
-			<section id="contact2" aria-labelledby="extra-title">
-				<h2 class="ih2" id="extra-title">Додатково надаємо:</h2>
-				<ul>
-					<li>Вивіз брухту</li>
-					<li>Доставку брухту</li>
+		<section class="cta metal" id="contact" aria-labelledby="cta-title">
+			<div class="container">
+				<h2 id="cta-title">Телефони для зв’язку</h2>
+				<ul class="cta-phones">
+					<li><a href="tel:+380675667481">+38 (067) 566-74-81</a></li>
+					<li><a href="tel:+380676106262">+38 (067) 610-62-62</a></li>
 				</ul>
-			</section>
-
-			<section id="contact3" aria-labelledby="awards-title">
-				<h2 class="visually-hidden" id="awards-title">Нагороди</h2>
-				<ul class="visually-hidden">
-					<li>Підприємство року</li>
-					<li>Відзнака «10 років компанії»</li>
-				</ul>
-			</section>
-		</aside>
-
-		<section aria-labelledby="utp-title">
-			<h2 class="visually-hidden" id="utp-title">Наші переваги</h2>
-			<ul class="utp_blocks">
-				<li class="block">
-					<img src="../../assets/img/theme/utp_1.png" width="45" height="35" alt="">
-					<p class="text">Здійснюємо вивезення брухту</p>
-				</li>
-				<li class="block">
-					<img src="../../assets/img/theme/utp_2.png" width="40" height="36" alt="">
-					<p class="text">Розрахунок в будь-якій формі</p>
-				</li>
-				<li class="block">
-					<img src="../../assets/img/theme/utp_3.png" width="38" height="38" alt="">
-					<p class="text">Оформлення супровідної документації</p>
-				</li>
-				<li class="block">
-					<img src="../../assets/img/theme/utp_4.png" width="34" height="40" alt="">
-					<p class="text">Найкраща <br>ціна</p>
-				</li>
-			</ul>
+				<p><a class="btn" href="tel:+380675667481"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Зателефонувати</a></p>
+				<div class="cta-extra">
+					<p class="visually-hidden">Додатково надаємо:</p>
+					<ul class="chips" aria-label="Додатково надаємо">
+						<li>Вивіз брухту</li>
+						<li>Доставку брухту</li>
+					</ul>
+					<p>Тел/Факс: <a href="tel:+380567890424">+38 (056) 789-04-24</a><br>
+					e-mail: <a href="mailto:Vikkon@3g.ua">Vikkon@3g.ua</a></p>
+				</div>
+			</div>
 		</section>
 	</main>
 
-	<footer>
-		<nav id="footer" aria-label="Меню в підвалі">
-			<ul id="menu_footer">
-				<li><a href="../../">Головна</a></li>
-				<li><a href="../buy_scrap/">Купівля брухту</a></li>
-				<li><a href="../scrap_implementation/">Реалізація брухту</a></li>
-				<li><a href="../contacts/" aria-current="page">Контакти</a></li>
-			</ul>
-		</nav>
-		<p id="fnx">
-			<a href="https://fnx.dp.ua" title="Фенікс Індастрі"><img src="../../assets/img/theme/fenix_logo.png" width="61" height="73" alt="Фенікс Індастрі"><br>
-			Створення сайтів Дніпро</a>: &copy;2010 Фенікс Індастрі
-		</p>
+	<footer class="site-footer">
+		<div class="container">
+			<div class="footer-grid">
+				<div>
+					<h2>ВІККОН</h2>
+					<p>Компанія «ВІККОН» з 2006 року купує, переробляє та продає брухт чорних і кольорових металів у Дніпрі. Вивезення брухту, демонтаж металоконструкцій, розрахунок у будь-якій формі.</p>
+				</div>
+				<nav aria-label="Меню в підвалі">
+					<h2>Розділи</h2>
+					<ul>
+						<li><a href="../../">Головна</a></li>
+						<li><a href="../buy_scrap/">Купівля брухту</a></li>
+						<li><a href="../scrap_implementation/">Реалізація брухту</a></li>
+						<li><a href="./" aria-current="page">Контакти</a></li>
+					</ul>
+				</nav>
+				<div>
+					<h2>Контакти</h2>
+					<p><a href="tel:+380675667481">+38 (067) 566-74-81</a><br>
+					<a href="tel:+380676106262">+38 (067) 610-62-62</a><br>
+					<a href="tel:+380567890424">+38 (056) 789-04-24</a> (тел/факс)</p>
+					<p><a href="mailto:Vikkon@3g.ua">Vikkon@3g.ua</a></p>
+					<p>м. Дніпро, пр-т Богдана Хмельницького, 171</p>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<span>&copy; ВІККОН</span>
+			</div>
+		</div>
 	</footer>
+
+	<a class="to-top" href="#top" aria-label="Нагору"><span aria-hidden="true">&uarr;</span><span aria-hidden="true">Вгору</span></a>
 </body>
 </html>
