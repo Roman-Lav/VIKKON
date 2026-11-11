@@ -191,12 +191,21 @@
 			</div>
 		</section>
 
-		<section class="section section--soft" id="contacts" aria-labelledby="contacts-title">
+
+		<section class="cta metal" id="contacts" aria-labelledby="contacts-title">
 			<div class="container">
-				<div class="section-title">
-					<p class="eyebrow">Контактна інформація</p>
-					<h2 id="contacts-title">Контакти</h2>
-				</div>
+				<p class="eyebrow">Контактна інформація</p>
+				<h2 id="contacts-title">Контакти</h2>
+				<ul class="cta-phones">
+					<li><a href="tel:+380675667481">+38 (067) 566-74-81</a></li>
+					<li><a href="tel:+380676106262">+38 (067) 610-62-62</a></li>
+				</ul>
+				<p class="visually-hidden">Додатково надаємо:</p>
+				<ul class="chips" aria-label="Додатково надаємо">
+					<li>Вивіз брухту</li>
+					<li>Доставку брухту</li>
+				</ul>
+
 				<div class="contact-cards">
 					<section class="contact-card" aria-labelledby="c-addr">
 						<h3 id="c-addr">Адреси</h3>
@@ -205,13 +214,8 @@
 							<p>Склад: 49000 м. Дніпро, пр-т Богдана Хмельницького, 171</p>
 						</address>
 					</section>
-					<section class="contact-card" aria-labelledby="c-phones">
-						<h3 id="c-phones">Телефони:</h3>
-						<ul>
-							<li><a href="tel:+380675667481">(067) 566-74-81</a></li>
-							<li><a href="tel:+380676106262">(067) 610-62-62</a></li>
-						</ul>
-						<h3 id="c-email" class="contact-card__next">E-mail:</h3>
+					<section class="contact-card" aria-labelledby="c-email">
+						<h3 id="c-email">E-mail:</h3>
 						<ul>
 							<li class="contact-email-main"><a href="mailto:vikkon.2026@gmail.com">vikkon.2026@gmail.com</a></li>
 							<li><a href="mailto:vikkon@3g.ua">vikkon@3g.ua</a></li>
@@ -255,51 +259,23 @@
 				</section>
 			</div>
 		</section>
-
-		<section class="cta metal" id="call" aria-labelledby="cta-title">
-			<div class="container">
-				<h2 id="cta-title">Телефони для зв’язку</h2>
-				<ul class="cta-phones">
-					<li><a href="tel:+380675667481">+38 (067) 566-74-81</a></li>
-					<li><a href="tel:+380676106262">+38 (067) 610-62-62</a></li>
-				</ul>
-				<p><a class="btn" href="tel:+380675667481"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Зателефонувати</a></p>
-				<div class="cta-extra">
-					<p class="visually-hidden">Додатково надаємо:</p>
-					<ul class="chips" aria-label="Додатково надаємо">
-						<li>Вивіз брухту</li>
-						<li>Доставку брухту</li>
-					</ul>
-					<p>e-mail: <a href="mailto:Vikkon@3g.ua">Vikkon@3g.ua</a></p>
-				</div>
-			</div>
-		</section>
 	</main>
 
 	<footer class="site-footer">
 		<div class="container">
-			<div class="footer-grid">
-				<div>
-					<h2>ВІККОН</h2>
-					<p>Компанія «ВІККОН» з 2006 року купує, переробляє та продає брухт чорних і кольорових металів у Дніпрі. Вивезення брухту, демонтаж металоконструкцій, розрахунок у будь-якій формі.</p>
-				</div>
-				<nav aria-label="Меню в підвалі">
-					<h2>Розділи</h2>
-					<ul>
-						<li><a href="#top">Головна</a></li>
-						<li><a href="#prices">Ціни</a></li>
-						<li><a href="#about">Про компанію</a></li>
-						<li><a href="#contacts">Контакти</a></li>
-					</ul>
-				</nav>
-				<div>
-					<h2>Контакти</h2>
-					<p><a href="tel:+380675667481">+38 (067) 566-74-81</a><br>
-					<a href="tel:+380676106262">+38 (067) 610-62-62</a></p>
-					<p><a href="mailto:Vikkon@3g.ua">Vikkon@3g.ua</a></p>
-					<p>м. Дніпро, пр-т Богдана Хмельницького, 171</p>
-				</div>
+			<div class="footer-about">
+				<h2>ВІККОН</h2>
+				<p>Компанія «ВІККОН» з 2006 року купує, переробляє та продає брухт чорних і кольорових металів у Дніпрі. Вивезення брухту, демонтаж металоконструкцій, розрахунок у будь-якій формі.</p>
 			</div>
+			<nav class="footer-nav" aria-label="Меню в підвалі">
+				<h2>Розділи</h2>
+				<ul>
+					<li><a href="#top">Головна</a></li>
+					<li><a href="#prices">Ціни</a></li>
+					<li><a href="#about">Про компанію</a></li>
+					<li><a href="#contacts">Контакти</a></li>
+				</ul>
+			</nav>
 			<div class="footer-bottom">
 				<span>&copy; ВІККОН</span>
 			</div>
